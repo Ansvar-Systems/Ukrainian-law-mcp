@@ -24,11 +24,11 @@ export interface ValidateCitationResult {
 /**
  * Parse an Ukrainian legal citation.
  * Supports:
- * - "Section 13 Privacy Act 1988" / "Section 13, Privacy Act 1988"
- * - "Privacy Act 1988 s 13" / "Privacy Act 1988, s 13"
- * - "[Act Title Year] s N"
+ * - "Section 13 <Law Title>" / "Section 13, <Law Title>"
+ * - "<Law Title> s 13" / "<Law Title>, s 13"
+ * - "[Law Title] s N"
  * - "s 13" (section only, no document)
- * - Plain document reference (e.g., "Privacy Act 1988")
+ * - Plain document reference (e.g., "Про захист персональних даних")
  */
 function parseCitation(citation: string): { documentRef: string; sectionRef?: string } | null {
   const trimmed = citation.trim();

@@ -53,7 +53,7 @@ export const TOOLS: Tool[] = [
       'Search Ukrainian statutes and regulations by keyword using full-text search (FTS5 with BM25 ranking). ' +
       'Returns matching provisions with document context, snippets with >>> <<< markers around matched terms, and relevance scores. ' +
       'Supports FTS5 syntax: quoted phrases ("exact match"), boolean operators (AND, OR, NOT), and prefix wildcards (term*). ' +
-      'Results are in English. Default limit is 10 results. For broad topics, increase the limit. ' +
+      'Results are in original legal text (primarily Ukrainian). Default limit is 10 results. For broad topics, increase the limit. ' +
       'Do NOT use this for retrieving a known provision — use get_provision instead.',
     inputSchema: {
       type: 'object',
@@ -61,7 +61,7 @@ export const TOOLS: Tool[] = [
         query: {
           type: 'string',
           description:
-            'Search query in English. Supports FTS5 syntax: ' +
+            'Search query text. Supports FTS5 syntax: ' +
             '"personal information" for exact phrase, privacy* for prefix.',
         },
         document_id: {
@@ -89,7 +89,7 @@ export const TOOLS: Tool[] = [
       'Specify a document_id (Act title, abbreviation, or internal ID) and optionally a section or provision_ref. ' +
       'Omit section/provision_ref to get ALL provisions in the statute (use sparingly — can be large). ' +
       'Returns provision text, chapter, section number, and metadata. ' +
-      'Supports Act title references (e.g., "Privacy Act 1988"), abbreviations, and full titles. ' +
+      'Supports statute title references (e.g., "Про захист персональних даних"), abbreviations, and full titles. ' +
       'Use this when you know WHICH provision you want. For discovery, use search_legislation instead.',
     inputSchema: {
       type: 'object',
@@ -97,8 +97,8 @@ export const TOOLS: Tool[] = [
         document_id: {
           type: 'string',
           description:
-            'Statute identifier: Act title (e.g., "Privacy Act 1988"), abbreviation, ' +
-            'or internal document ID (e.g., "privacy-act-1988").',
+            'Statute identifier: title (e.g., "Про захист персональних даних"), abbreviation, ' +
+            'or internal document ID (e.g., "ua-personal-data-protection").',
         },
         section: {
           type: 'string',
@@ -118,13 +118,13 @@ export const TOOLS: Tool[] = [
       'Validate an Ukrainian legal citation against the database — zero-hallucination check. ' +
       'Parses the citation, checks that the document and provision exist, and returns warnings about status ' +
       '(repealed, amended). Use this to verify any citation BEFORE including it in a legal analysis. ' +
-      'Supports formats: "Section 13 Privacy Act 1988", "Privacy Act 1988 s 13", "s 13".',
+      'Supports formats: "Стаття 8 Закону України Про захист персональних даних", "2297-VI ст. 8", "ст. 8".',
     inputSchema: {
       type: 'object',
       properties: {
         citation: {
           type: 'string',
-          description: 'Citation string to validate. Examples: "Section 13 Privacy Act 1988", "Privacy Act 1988 s 13".',
+          description: 'Citation string to validate. Examples: "Стаття 8 Закону України Про захист персональних даних", "2297-VI ст. 8".',
         },
       },
       required: ['citation'],
@@ -161,8 +161,8 @@ export const TOOLS: Tool[] = [
     name: 'format_citation',
     description:
       'Format an Ukrainian legal citation per standard conventions. ' +
-      'Three formats: "full" (formal, e.g., "Section 13, Privacy Act 1988"), ' +
-      '"short" (abbreviated, e.g., "Privacy Act 1988 s 13"), "pinpoint" (section reference only, e.g., "s 13").',
+      'Three formats: "full" (formal, e.g., "Стаття 8, Закон України Про захист персональних даних"), ' +
+      '"short" (abbreviated, e.g., "Закон Про захист персональних даних ст. 8"), "pinpoint" (section reference only, e.g., "ст. 8").',
     inputSchema: {
       type: 'object',
       properties: {
@@ -286,7 +286,7 @@ export const TOOLS: Tool[] = [
       'Check EU alignment status for an Ukrainian statute or provision. ' +
       'Detects references to EU directives, alignment status, and cross-references. ' +
       'Returns compliance status (compliant, partial, unclear, not_applicable) with warnings. ' +
-      'Ukrainian is an EU Member State; this checks implementation status and cross-references.',
+      'Ukraine is an EU candidate state; this checks implementation status and cross-references.',
     inputSchema: {
       type: 'object',
       properties: {

@@ -1,50 +1,57 @@
 #!/usr/bin/env tsx
 /**
- * Ukrainian Law MCP -- Ingestion Pipeline
- *
- * Fetches Ukrainian legislation from the Sejm ELI API (api.sejm.gov.pl).
- * The Sejm (Ukrainian Parliament) provides free public access to all legislation
- * published in Dziennik Ustaw (Journal of Laws) via the ELI API.
+ * Ukrainian Law MCP -- Real legislation ingestion from zakon.rada.gov.ua
  *
  * Strategy:
- * 1. For each act, fetch the HTML text from the ELI API endpoint
- * 2. Parse articles (Art.) from the structured HTML
- * 3. Write seed JSON files for the database builder
- *
- * Usage:
- *   npm run ingest                    # Full ingestion
- *   npm run ingest -- --limit 5       # Test with 5 acts
- *   npm run ingest -- --skip-fetch    # Reuse cached pages
- *
- * Data source: api.sejm.gov.pl (Chancellery of the Sejm of the Republic of Poland)
- * License: Ukrainian legislation is public domain under Art. 4 of the Copyright Act
+ * 1. Fetch /print page in Ukrainian for authoritative article text
+ * 2. Fetch metadata page with ?lang=en to capture official English title where available
+ * 3. Parse article structure from the print page
+ * 4. Write deterministic seed files into data/seed/
  */
 
 import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
 import { fetchWithRateLimit } from './lib/fetcher.js';
-import { parseUkrainianHtml, KEY_UKRAINIAN_ACTS, type ActIndexEntry, type ParsedAct } from './lib/parser.js';
+import {
+  TARGET_LAWS,
+  extractEnglishTitle,
+  parseLawPrintHtml,
+  type ParsedAct,
+  type TargetLaw,
+} from './lib/parser.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const PORTAL_BASE = 'https://zakon.rada.gov.ua';
 const SOURCE_DIR = path.resolve(__dirname, '../data/source');
 const SEED_DIR = path.resolve(__dirname, '../data/seed');
 
-/** ELI API base URL for the Sejm */
-const ELI_API_BASE = 'https://api.sejm.gov.pl/eli/acts/DU';
+interface CliArgs {
+  limit: number | null;
+  skipFetch: boolean;
+}
 
-function parseArgs(): { limit: number | null; skipFetch: boolean } {
+interface IngestStats {
+  processed: number;
+  failed: number;
+  totalProvisions: number;
+  totalDefinitions: number;
+}
+
+function parseArgs(): CliArgs {
   const args = process.argv.slice(2);
   let limit: number | null = null;
   let skipFetch = false;
 
   for (let i = 0; i < args.length; i++) {
     if (args[i] === '--limit' && args[i + 1]) {
-      limit = parseInt(args[i + 1], 10);
+      limit = Number.parseInt(args[i + 1], 10);
       i++;
-    } else if (args[i] === '--skip-fetch') {
+      continue;
+    }
+    if (args[i] === '--skip-fetch') {
       skipFetch = true;
     }
   }
@@ -52,135 +59,126 @@ function parseArgs(): { limit: number | null; skipFetch: boolean } {
   return { limit, skipFetch };
 }
 
-/**
- * Build the ELI API URL for fetching an act's HTML text.
- * Pattern: https://api.sejm.gov.pl/eli/acts/DU/{YEAR}/{POZ}/text.html
- */
-function buildTextUrl(act: ActIndexEntry): string {
-  return `${ELI_API_BASE}/${act.year}/${act.poz}/text.html`;
-}
-
-async function fetchAndParseActs(acts: ActIndexEntry[], skipFetch: boolean): Promise<void> {
-  console.log(`\nProcessing ${acts.length} Ukrainian Acts from api.sejm.gov.pl...\n`);
-
+function ensureDirs(): void {
   fs.mkdirSync(SOURCE_DIR, { recursive: true });
   fs.mkdirSync(SEED_DIR, { recursive: true });
+}
 
-  let processed = 0;
-  let skipped = 0;
-  let failed = 0;
-  let totalProvisions = 0;
-  let totalDefinitions = 0;
-  const results: { act: string; provisions: number; definitions: number; status: string }[] = [];
-
-  for (const act of acts) {
-    const sourceFile = path.join(SOURCE_DIR, `${act.id}.html`);
-    const seedFile = path.join(SEED_DIR, `${act.id}.json`);
-
-    // Skip if seed already exists and we're in skip-fetch mode
-    if (skipFetch && fs.existsSync(seedFile)) {
-      const existing = JSON.parse(fs.readFileSync(seedFile, 'utf-8')) as ParsedAct;
-      const provCount = existing.provisions?.length ?? 0;
-      const defCount = existing.definitions?.length ?? 0;
-      totalProvisions += provCount;
-      totalDefinitions += defCount;
-      results.push({ act: act.shortName, provisions: provCount, definitions: defCount, status: 'cached' });
-      skipped++;
-      processed++;
-      continue;
+function clearExistingSeedFiles(): void {
+  for (const file of fs.readdirSync(SEED_DIR)) {
+    if (file.endsWith('.json')) {
+      fs.unlinkSync(path.join(SEED_DIR, file));
     }
+  }
+}
 
-    try {
-      let html: string;
+function buildPrintUrl(law: TargetLaw): string {
+  return `${PORTAL_BASE}/laws/show/${law.reference}/print`;
+}
 
-      if (fs.existsSync(sourceFile) && skipFetch) {
-        html = fs.readFileSync(sourceFile, 'utf-8');
-        console.log(`  Using cached ${act.shortName} (${act.dziennikRef}) (${(html.length / 1024).toFixed(0)} KB)`);
-      } else {
-        const textUrl = buildTextUrl(act);
-        process.stdout.write(`  Fetching ${act.shortName} (${act.dziennikRef})...`);
-        const result = await fetchWithRateLimit(textUrl);
+function buildEnglishMetaUrl(law: TargetLaw): string {
+  return `${PORTAL_BASE}/laws/show/${law.reference}?lang=en`;
+}
 
-        if (result.status !== 200) {
-          console.log(` HTTP ${result.status}`);
-          results.push({ act: act.shortName, provisions: 0, definitions: 0, status: `HTTP ${result.status}` });
-          failed++;
-          processed++;
-          continue;
-        }
+function cacheFilePath(law: TargetLaw, suffix: 'print' | 'en'): string {
+  return path.join(SOURCE_DIR, `${law.order}-${law.id}.${suffix}.html`);
+}
 
-        html = result.body;
+function seedFilePath(law: TargetLaw): string {
+  return path.join(SEED_DIR, `${law.order}-${law.id}.json`);
+}
 
-        // Validate that we got real legislation content, not a bot challenge
-        if (html.includes('window["bobcmn"]') || !html.includes('unit_arti')) {
-          console.log(` BLOCKED (bot challenge or no article content)`);
-          results.push({ act: act.shortName, provisions: 0, definitions: 0, status: 'BLOCKED' });
-          failed++;
-          processed++;
-          continue;
-        }
+async function fetchLawHtml(law: TargetLaw, skipFetch: boolean): Promise<{ printHtml: string; enHtml: string }> {
+  const printPath = cacheFilePath(law, 'print');
+  const enPath = cacheFilePath(law, 'en');
 
-        fs.writeFileSync(sourceFile, html);
-        console.log(` OK (${(html.length / 1024).toFixed(0)} KB)`);
-      }
-
-      const parsed = parseUkrainianHtml(html, act);
-      fs.writeFileSync(seedFile, JSON.stringify(parsed, null, 2));
-      totalProvisions += parsed.provisions.length;
-      totalDefinitions += parsed.definitions.length;
-      console.log(`    -> ${parsed.provisions.length} provisions, ${parsed.definitions.length} definitions extracted`);
-      results.push({
-        act: act.shortName,
-        provisions: parsed.provisions.length,
-        definitions: parsed.definitions.length,
-        status: 'OK',
-      });
-    } catch (error) {
-      const msg = error instanceof Error ? error.message : String(error);
-      console.log(`  ERROR ${act.shortName}: ${msg}`);
-      results.push({ act: act.shortName, provisions: 0, definitions: 0, status: `ERROR: ${msg.substring(0, 80)}` });
-      failed++;
-    }
-
-    processed++;
+  if (skipFetch && fs.existsSync(printPath) && fs.existsSync(enPath)) {
+    return {
+      printHtml: fs.readFileSync(printPath, 'utf-8'),
+      enHtml: fs.readFileSync(enPath, 'utf-8'),
+    };
   }
 
-  console.log(`\n${'='.repeat(72)}`);
-  console.log('Ingestion Report');
-  console.log('='.repeat(72));
-  console.log(`\n  Source:       api.sejm.gov.pl (Sejm ELI API)`);
-  console.log(`  License:     Public domain (Art. 4 Ukrainian Copyright Act)`);
-  console.log(`  Processed:   ${processed}`);
-  console.log(`  Cached:      ${skipped}`);
-  console.log(`  Failed:      ${failed}`);
-  console.log(`  Total provisions:  ${totalProvisions}`);
-  console.log(`  Total definitions: ${totalDefinitions}`);
-  console.log(`\n  Per-Act breakdown:`);
-  console.log(`  ${'Act'.padEnd(20)} ${'Provisions'.padStart(12)} ${'Definitions'.padStart(13)} ${'Status'.padStart(10)}`);
-  console.log(`  ${'-'.repeat(20)} ${'-'.repeat(12)} ${'-'.repeat(13)} ${'-'.repeat(10)}`);
-  for (const r of results) {
-    console.log(`  ${r.act.padEnd(20)} ${String(r.provisions).padStart(12)} ${String(r.definitions).padStart(13)} ${r.status.padStart(10)}`);
+  const printRes = await fetchWithRateLimit(buildPrintUrl(law));
+  if (printRes.status !== 200) {
+    throw new Error(`Print fetch failed: HTTP ${printRes.status}`);
   }
-  console.log('');
+
+  const enRes = await fetchWithRateLimit(buildEnglishMetaUrl(law));
+  if (enRes.status !== 200) {
+    throw new Error(`English metadata fetch failed: HTTP ${enRes.status}`);
+  }
+
+  fs.writeFileSync(printPath, printRes.body);
+  fs.writeFileSync(enPath, enRes.body);
+
+  return { printHtml: printRes.body, enHtml: enRes.body };
+}
+
+async function ingestLaw(law: TargetLaw, skipFetch: boolean): Promise<ParsedAct> {
+  const { printHtml, enHtml } = await fetchLawHtml(law, skipFetch);
+  const titleEn = extractEnglishTitle(enHtml);
+  return parseLawPrintHtml(printHtml, law, titleEn, enHtml);
 }
 
 async function main(): Promise<void> {
   const { limit, skipFetch } = parseArgs();
+  const laws = limit ? TARGET_LAWS.slice(0, limit) : TARGET_LAWS;
 
-  console.log('Ukrainian Law MCP -- Ingestion Pipeline');
-  console.log('====================================\n');
-  console.log(`  Source: api.sejm.gov.pl (Chancellery of the Sejm)`);
-  console.log(`  Format: ELI HTML (structured legislation text)`);
-  console.log(`  License: Public domain (Art. 4 Ukrainian Copyright Act)`);
+  console.log('Ukrainian Law MCP -- Real Data Ingestion');
+  console.log('========================================');
+  console.log(`Portal: ${PORTAL_BASE}`);
+  console.log(`Laws selected: ${laws.length}`);
+  if (limit) console.log(`--limit ${limit}`);
+  if (skipFetch) console.log('--skip-fetch');
+  console.log('');
 
-  if (limit) console.log(`  --limit ${limit}`);
-  if (skipFetch) console.log(`  --skip-fetch`);
+  ensureDirs();
+  clearExistingSeedFiles();
 
-  const acts = limit ? KEY_UKRAINIAN_ACTS.slice(0, limit) : KEY_UKRAINIAN_ACTS;
-  await fetchAndParseActs(acts, skipFetch);
+  const stats: IngestStats = {
+    processed: 0,
+    failed: 0,
+    totalProvisions: 0,
+    totalDefinitions: 0,
+  };
+
+  for (const law of laws) {
+    process.stdout.write(`[${law.order}] ${law.id} (${law.reference}) ... `);
+
+    try {
+      const parsed = await ingestLaw(law, skipFetch);
+      if (parsed.provisions.length === 0) {
+        throw new Error('No provisions extracted');
+      }
+
+      const outPath = seedFilePath(law);
+      fs.writeFileSync(outPath, JSON.stringify(parsed, null, 2));
+
+      stats.processed++;
+      stats.totalProvisions += parsed.provisions.length;
+      stats.totalDefinitions += parsed.definitions.length;
+
+      console.log(
+        `OK (${parsed.provisions.length} provisions, ${parsed.definitions.length} definitions)`,
+      );
+    } catch (error) {
+      stats.failed++;
+      const msg = error instanceof Error ? error.message : String(error);
+      console.log(`FAILED (${msg})`);
+    }
+  }
+
+  console.log('\nIngestion Summary');
+  console.log('-----------------');
+  console.log(`Processed:  ${stats.processed}`);
+  console.log(`Failed:     ${stats.failed}`);
+  console.log(`Provisions: ${stats.totalProvisions}`);
+  console.log(`Definitions:${stats.totalDefinitions}`);
+  console.log(`Seed dir:   ${SEED_DIR}`);
 }
 
 main().catch(error => {
-  console.error('Fatal error:', error);
+  console.error('Fatal ingestion error:', error);
   process.exit(1);
 });

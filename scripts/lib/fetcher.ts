@@ -1,29 +1,30 @@
 /**
- * Rate-limited HTTP client for Ukrainian legislation from the Sejm ELI API.
+ * Rate-limited HTTP client for Ukrainian legislation from zakon.rada.gov.ua.
  *
- * Data source: api.sejm.gov.pl — the official ELI (European Legislation Identifier)
- * API provided by the Chancellery of the Sejm of the Republic of Poland.
+ * Portal:
+ *   - Law text: https://zakon.rada.gov.ua/laws/show/{REF}/print
+ *   - Metadata (English UI): https://zakon.rada.gov.ua/laws/show/{REF}?lang=en
  *
- * URL patterns:
- *   Metadata: https://api.sejm.gov.pl/eli/acts/DU/{YEAR}/{POZ}
- *   HTML text: https://api.sejm.gov.pl/eli/acts/DU/{YEAR}/{POZ}/text.html
- *
- * - 500ms minimum delay between requests (respectful to government servers)
- * - User-Agent header identifying the MCP
- * - Retry on 429/5xx with exponential backoff
- * - No auth needed (public government data)
+ * Requirements:
+ *   - 1-2 second delay between requests to government servers
+ *   - Retries for transient failures
  */
 
-const USER_AGENT = 'Ukrainian-Law-MCP/1.0 (https://github.com/Ansvar-Systems/ukrainian-law-mcp; hello@ansvar.ai)';
-const MIN_DELAY_MS = 500;
+const USER_AGENT =
+  'Ansvar-Law-MCP/1.0 (+https://github.com/Ansvar-Systems/Ukrainian-law-mcp)';
+const MIN_DELAY_MS = 1200;
 
 let lastRequestTime = 0;
 
-async function rateLimit(): Promise<void> {
+function sleep(ms: number): Promise<void> {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function enforceRateLimit(): Promise<void> {
   const now = Date.now();
   const elapsed = now - lastRequestTime;
   if (elapsed < MIN_DELAY_MS) {
-    await new Promise(resolve => setTimeout(resolve, MIN_DELAY_MS - elapsed));
+    await sleep(MIN_DELAY_MS - elapsed);
   }
   lastRequestTime = Date.now();
 }
@@ -36,38 +37,62 @@ export interface FetchResult {
 }
 
 /**
- * Fetch a URL with rate limiting and proper headers.
- * Retries up to 3 times on 429/5xx errors with exponential backoff.
+ * Fetch a page from zakon.rada.gov.ua with retries for 429/5xx/network errors.
  */
-export async function fetchWithRateLimit(url: string, maxRetries = 3): Promise<FetchResult> {
-  await rateLimit();
+export async function fetchWithRateLimit(
+  url: string,
+  maxRetries = 2,
+): Promise<FetchResult> {
+  let attempt = 0;
+  let lastError: unknown;
 
-  for (let attempt = 0; attempt <= maxRetries; attempt++) {
-    const response = await fetch(url, {
-      headers: {
-        'User-Agent': USER_AGENT,
-        'Accept': 'text/html, application/json, */*',
-      },
-      redirect: 'follow',
-    });
+  while (attempt <= maxRetries) {
+    await enforceRateLimit();
 
-    if (response.status === 429 || response.status >= 500) {
+    try {
+      const response = await fetch(url, {
+        headers: {
+          'User-Agent': USER_AGENT,
+          Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+          'Accept-Language': 'uk,en;q=0.8',
+        },
+        redirect: 'follow',
+      });
+
+      const body = await response.text();
+      const result: FetchResult = {
+        status: response.status,
+        body,
+        contentType: response.headers.get('content-type') ?? '',
+        url: response.url,
+      };
+
+      if (response.status === 429 || response.status >= 500) {
+        if (attempt < maxRetries) {
+          const backoff = 1000 * Math.pow(2, attempt);
+          await sleep(backoff);
+          attempt++;
+          continue;
+        }
+      }
+
+      return result;
+    } catch (error) {
+      lastError = error;
       if (attempt < maxRetries) {
-        const backoff = Math.pow(2, attempt + 1) * 1000;
-        console.log(`  HTTP ${response.status} for ${url}, retrying in ${backoff}ms...`);
-        await new Promise(resolve => setTimeout(resolve, backoff));
+        const backoff = 1000 * Math.pow(2, attempt);
+        await sleep(backoff);
+        attempt++;
         continue;
       }
     }
 
-    const body = await response.text();
-    return {
-      status: response.status,
-      body,
-      contentType: response.headers.get('content-type') ?? '',
-      url: response.url,
-    };
+    attempt++;
   }
 
-  throw new Error(`Failed to fetch ${url} after ${maxRetries} retries`);
+  throw new Error(
+    `Failed to fetch ${url} after ${maxRetries + 1} attempts: ${
+      lastError instanceof Error ? lastError.message : String(lastError)
+    }`,
+  );
 }

@@ -82,7 +82,7 @@ export async function validateEUCompliance(
         compliance_status: 'not_applicable',
         eu_references_found: 0,
         warnings: [],
-        recommendations: ['No EU cross-references found for this Ukrainian statute. Ukrainian is an EU Member State; EU references indicate transposition obligations.'],
+        recommendations: ['No EU cross-references found for this Ukrainian statute. Ukraine is an EU candidate state, so EU alignment may still exist even when explicit references are absent.'],
       },
       _metadata: generateResponseMetadata(db),
     };

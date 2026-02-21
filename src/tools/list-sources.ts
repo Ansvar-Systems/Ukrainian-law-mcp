@@ -44,15 +44,15 @@ export async function listSources(
     results: {
       sources: [
         {
-          name: 'Official Legal Database',
-          authority: 'Government (State Chancellery of Ukrainian)',
+          name: 'Legislation of Ukraine Portal',
+          authority: 'Verkhovna Rada of Ukraine',
           url: 'https://zakon.rada.gov.ua',
-          license: 'Creative Commons Attribution 4.0 International (CC BY 4.0)',
+          license: 'Government terms (official public legislative portal)',
           coverage:
-            'All Commonwealth (federal) Acts and legislative instruments, ' +
-            'including privacy, cybersecurity, critical infrastructure, ' +
-            'corporations, consumer, telecommunications, and criminal law',
-          languages: ['en'],
+            'Selected Ukrainian statutes and code provisions focused on data protection, ' +
+            'cybersecurity, electronic communications, critical infrastructure, ' +
+            'public information access, and cybercrime.',
+          languages: ['uk', 'en'],
         },
       ],
       database: {

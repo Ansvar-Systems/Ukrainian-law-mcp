@@ -3,7 +3,7 @@
  *
  * Resolves fuzzy document references (titles, IDs) to database document IDs.
  * Ukrainian legislation identifier resolution
- * (e.g., "Privacy Act 1988", "Corporations Act 2001").
+ * (e.g., "Про захист персональних даних", "Кримінальний кодекс України").
  */
 
 import type Database from '@ansvar/mcp-sqlite';
@@ -11,9 +11,9 @@ import type Database from '@ansvar/mcp-sqlite';
 /**
  * Resolve a document identifier to a database document ID.
  * Supports:
- * - Direct ID match (e.g., "privacy-act-1988")
- * - Title match (e.g., "Privacy Act 1988", "Privacy Act")
- * - Short name/abbreviation match (e.g., "SOCI Act")
+ * - Direct ID match (e.g., "ua-personal-data-protection")
+ * - Title match (e.g., "Про захист персональних даних")
+ * - Short name/abbreviation match
  * - Fuzzy title substring match
  */
 export function resolveDocumentId(

@@ -23,7 +23,7 @@ npx @ansvar/ukrainian-law-mcp
 
 ## Data Sources
 
-AI-generated seed data covering 10 key cybersecurity and data protection laws. Full official ingestion pending.
+Real legislation ingested from the official Verkhovna Rada legal portal: https://zakon.rada.gov.ua
 
 ## License
 
