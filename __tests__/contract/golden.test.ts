@@ -114,6 +114,30 @@ describe('All 10 laws are present', () => {
   }
 });
 
+describe('Provision coverage by law', () => {
+  const expectedCounts: Record<string, number> = {
+    'ua-personal-data-protection': 30,
+    'ua-cybersecurity': 17,
+    'ua-electronic-communications': 130,
+    'ua-electronic-commerce': 19,
+    'ua-electronic-trust-services': 60,
+    'ua-access-public-information': 26,
+    'ua-criminal-code-cybercrime': 6,
+    'ua-critical-infrastructure': 32,
+    'ua-information-protection-systems': 13,
+    'ua-competition-trade-secrets': 29,
+  };
+
+  for (const [docId, expected] of Object.entries(expectedCounts)) {
+    it(`should keep expected provision count for ${docId}`, () => {
+      const row = db.prepare(
+        'SELECT COUNT(*) as cnt FROM legal_provisions WHERE document_id = ?'
+      ).get(docId) as { cnt: number };
+      expect(row.cnt).toBe(expected);
+    });
+  }
+});
+
 describe('list_sources', () => {
   it('should have db_metadata table', () => {
     const row = db.prepare('SELECT COUNT(*) as cnt FROM db_metadata').get() as { cnt: number };

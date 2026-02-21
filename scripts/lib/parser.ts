@@ -194,13 +194,24 @@ function extractArticleArea(html: string): string {
 }
 
 function buildProvision(section: string, heading: string, lines: string[]): ParsedProvision | null {
-  const content = normalizeWhitespace(lines.join('\n'));
+  const headingNormalized = normalizeWhitespace(heading);
+  let content = normalizeWhitespace(lines.join('\n'));
+
+  // Keep placeholder articles that are explicitly marked as removed/repealed
+  // so section numbering remains complete in downstream queries.
+  if (
+    !content &&
+    /(?:виключено|втратив чинність)/iu.test(headingNormalized)
+  ) {
+    content = headingNormalized.replace(/^\{|\}$/g, '').trim();
+  }
+
   if (!content) return null;
 
   const normalizedSection = section.replace(HYPHEN_VARIANTS, '-');
   const provisionRef = `art${normalizedSection}`;
-  const title = heading
-    ? `Стаття ${normalizedSection}. ${heading}`.trim()
+  const title = headingNormalized
+    ? `Стаття ${normalizedSection}. ${headingNormalized}`.trim()
     : `Стаття ${normalizedSection}`;
 
   return {
