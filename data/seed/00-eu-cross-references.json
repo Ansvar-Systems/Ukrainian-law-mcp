@@ -1,0 +1,56 @@
+{
+  "id": "eu-cross-references",
+  "type": "statute",
+  "title": "EU Cross-Reference Index for Ukrainian Law",
+  "title_en": "EU Cross-Reference Index for Ukrainian Law",
+  "short_name": "EU-XREF",
+  "status": "in_force",
+  "issued_date": "2024-01-01",
+  "in_force_date": "2024-01-01",
+  "url": "https://eur-lex.europa.eu",
+  "description": "Cross-reference index mapping Ukrainian national legislation to EU directives and regulations. Ukraine is an EU candidate state (candidate status granted June 2022) and is aligning its legal framework with the EU acquis communautaire as part of the accession process.",
+  "provisions": [
+    {
+      "provision_ref": "xref1",
+      "section": "1",
+      "title": "GDPR Alignment",
+      "content": "Ukraine aligns with the General Data Protection Regulation (EU) 2016/679 through the Law on Protection of Personal Data. Ukraine's data protection framework predates the GDPR but amendments have introduced GDPR-aligned principles including lawful bases for processing, data subject rights (access, rectification, erasure), data breach notification, and supervisory authority powers. Full harmonisation is planned as part of the EU accession process. The Ukrainian Parliament Commissioner for Human Rights serves as the supervisory authority."
+    },
+    {
+      "provision_ref": "xref2",
+      "section": "2",
+      "title": "NIS2 Alignment",
+      "content": "Ukraine aligns with Directive (EU) 2022/2555 (NIS2) through the Law on Cybersecurity (Law on Basic Principles of Cybersecurity). The law designates the State Service of Special Communications and Information Protection (SSSCIP) as the competent authority, establishes CERT-UA as the national CSIRT, and sets incident reporting requirements. Ukraine's cybersecurity framework was significantly strengthened following the full-scale invasion in 2022. The framework includes essential entity categorisation and risk management requirements aligned with NIS2 principles."
+    },
+    {
+      "provision_ref": "xref3",
+      "section": "3",
+      "title": "eIDAS Alignment",
+      "content": "Ukraine aligns with Regulation (EU) No 910/2014 (eIDAS) through the Law on Electronic Trust Services. The law establishes a framework for electronic identification, electronic signatures, electronic seals, and trust service providers. The Ministry of Digital Transformation oversees electronic identification schemes and the supervisory body for trust services. Ukraine has developed mobile-based electronic identification through the Diia application, which has been recognised internationally."
+    },
+    {
+      "provision_ref": "xref4",
+      "section": "4",
+      "title": "e-Commerce Directive Alignment",
+      "content": "Ukraine aligns with Directive 2000/31/EC (e-Commerce Directive) through the Law on Electronic Commerce. The law regulates information society services, establishes liability rules for intermediary service providers, and sets requirements for electronic contracts and commercial communications. The framework includes country-of-origin principles and transparency requirements for service providers aligned with the EU acquis."
+    },
+    {
+      "provision_ref": "xref5",
+      "section": "5",
+      "title": "Electronic Communications Framework Alignment",
+      "content": "Ukraine aligns with Directive (EU) 2018/1972 (European Electronic Communications Code) through the Law on Electronic Communications adopted in 2021. The law reformed the telecommunications regulatory framework to align with EU standards, including spectrum management, universal service obligations, consumer protection, and regulatory authority independence. The National Commission for State Regulation of Electronic Communications (NCEC) serves as the national regulatory authority."
+    },
+    {
+      "provision_ref": "xref6",
+      "section": "6",
+      "title": "Critical Infrastructure Directive Alignment",
+      "content": "Ukraine aligns with Directive (EU) 2022/2557 (Critical Entities Resilience) through the Law on Critical Infrastructure Protection. The law identifies critical infrastructure sectors, establishes resilience requirements for operators, and mandates incident notification. Given the ongoing conflict, Ukraine has developed additional wartime provisions for critical infrastructure protection that go beyond EU minimum requirements."
+    },
+    {
+      "provision_ref": "xref7",
+      "section": "7",
+      "title": "Trade Secrets Directive Alignment",
+      "content": "Ukraine aligns with Directive (EU) 2016/943 (Trade Secrets Directive) through trade secret provisions in the Law on Protection of Economic Competition and the Civil Code. The framework provides for protection of confidential business information, defines unlawful acquisition and use of trade secrets, and establishes civil remedies. Further harmonisation is planned under the Association Agreement implementation."
+    }
+  ]
+}

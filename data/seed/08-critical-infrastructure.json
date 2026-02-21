@@ -1,0 +1,85 @@
+{
+  "id": "ua-critical-infrastructure",
+  "type": "statute",
+  "title": "Закон України про критичну інфраструктуру",
+  "title_en": "Law of Ukraine on Critical Infrastructure",
+  "short_name": "ЗКІ",
+  "status": "in_force",
+  "issued_date": "2021-11-16",
+  "in_force_date": "2022-02-17",
+  "url": "https://zakon.rada.gov.ua/laws/show/1882-20",
+  "description": "The Law of Ukraine on Critical Infrastructure establishes the legal framework for identifying, categorising and protecting critical infrastructure objects in Ukraine. The Law defines the sectors of critical infrastructure, the responsibilities of infrastructure operators and regulatory authorities, and the national system for protecting critical infrastructure from physical and cyber threats, aligning with Directive (EU) 2022/2557 on the resilience of critical entities.",
+  "provisions": [
+    {
+      "provision_ref": "art1",
+      "section": "1",
+      "title": "Article 1. Definitions",
+      "content": "For the purposes of this Law: 'critical infrastructure' means infrastructure objects and systems whose disruption, damage or destruction would have a significant negative impact on the security of Ukraine, the life and health of citizens, the economic situation, or the effective functioning of state bodies; 'critical infrastructure operator' means a legal entity of public or private law that operates an object included in the register of critical infrastructure objects; 'critical infrastructure protection' means a set of measures aimed at preventing, minimising and eliminating threats to critical infrastructure; 'resilience' means the ability of a critical entity to prevent, protect against, respond to, adapt to, withstand, and recover from incidents; 'national system for critical infrastructure protection' means the totality of subjects of authority, critical infrastructure operators, and coordination bodies responsible for critical infrastructure protection, including the National Coordinator for Critical Infrastructure Protection; 'incident' means an event that significantly disrupts or has the potential to significantly disrupt the provision of essential services, including security incidents."
+    },
+    {
+      "provision_ref": "art2",
+      "section": "2",
+      "title": "Article 2. Sectors of Critical Infrastructure",
+      "content": "Critical infrastructure in Ukraine encompasses the following sectors: (1) energy, including electricity production, transmission, distribution and supply; oil and gas production, processing, storage and supply; heating systems and nuclear facilities; (2) water supply and water management; (3) transport and logistics, including aviation, rail, maritime, road, inland waterways and pipelines; (4) communications and information systems; (5) financial services, including banking, insurance and financial market infrastructure; (6) healthcare, including hospitals, emergency services and pharmaceutical supply chains; (7) public administration, including central government IT systems and emergency services; (8) food production and agriculture; (9) space infrastructure; (10) chemical and hazardous substance production and storage; (11) defence and the defence industrial base; (12) social infrastructure, including education systems and social services provision. The National Security and Defence Council may designate additional sectors as part of critical infrastructure by decision. Critical infrastructure of national significance shall be identified by the National Coordinator in cooperation with sector regulators."
+    },
+    {
+      "provision_ref": "art3",
+      "section": "3",
+      "title": "Article 3. National Coordinator for Critical Infrastructure Protection",
+      "content": "The Cabinet of Ministers of Ukraine shall designate the National Coordinator for Critical Infrastructure Protection, which shall be responsible for: (1) coordinating the activities of central executive bodies, security and defence sector bodies, and critical infrastructure operators in the field of critical infrastructure protection; (2) developing and maintaining the national critical infrastructure protection strategy; (3) maintaining the register of critical infrastructure objects; (4) establishing and applying the methodology for the categorisation and assessment of criticality of infrastructure; (5) developing national minimum security requirements for critical infrastructure operators; (6) coordinating the preparation and implementation of critical infrastructure resilience plans; (7) representing Ukraine in international frameworks for critical infrastructure protection, including those established under Directive (EU) 2022/2557. The National Coordinator shall operate as a permanent body with representation from all relevant ministries and security agencies. Its decisions in the field of critical infrastructure protection shall be binding on all subjects."
+    },
+    {
+      "provision_ref": "art4",
+      "section": "4",
+      "title": "Article 4. Register of Critical Infrastructure Objects",
+      "content": "The National Coordinator shall maintain a register of critical infrastructure objects containing: (1) the name and location of each critical infrastructure object; (2) the sector and sub-sector of critical infrastructure to which the object belongs; (3) the category of criticality of the object; (4) the name and contact details of the operator; (5) the sector competent authority responsible for the supervision of the operator. The register shall be maintained as information with restricted access. The procedure for forming, maintaining and using the register shall be established by the Cabinet of Ministers. Operators of objects included in the register shall be notified in writing of their inclusion and shall be informed of the obligations that arise from that inclusion. The register shall be updated no less frequently than annually. The National Coordinator shall publish aggregate statistics on the number and sectoral distribution of critical infrastructure objects without disclosing specific locations or operator details."
+    },
+    {
+      "provision_ref": "art5",
+      "section": "5",
+      "title": "Article 5. Resilience Obligations of Critical Infrastructure Operators",
+      "content": "Operators of critical infrastructure objects shall: (1) conduct risk and threat assessments at least every four years, covering all relevant physical, cyber and hybrid threats; (2) develop, implement and regularly test resilience plans for maintaining and restoring essential services following a disruption; (3) implement appropriate technical and organisational security measures proportionate to the identified risks; (4) designate a security liaison officer responsible for coordinating with competent authorities; (5) notify the National Coordinator and the relevant sector competent authority of significant incidents without undue delay and no later than 24 hours after becoming aware of the incident; (6) cooperate with national authorities in the conduct of inspections and in implementing measures to increase resilience; (7) participate in exercises organised by the National Coordinator; (8) ensure appropriate background verification of staff with access to critical systems; (9) implement supply chain security measures, including requirements for third-party providers and contractors accessing critical systems."
+    },
+    {
+      "provision_ref": "art6",
+      "section": "6",
+      "title": "Article 6. Sector Competent Authorities",
+      "content": "For each sector of critical infrastructure, the relevant central executive body shall act as the sector competent authority and shall: (1) maintain a sector register of critical infrastructure objects; (2) assess the resilience of operators in the sector; (3) issue sector-specific guidance on implementing resilience obligations; (4) supervise compliance with this Law within the sector; (5) coordinate sector-level incident response; (6) cooperate with the National Coordinator on cross-sector risks. The following bodies are designated as sector competent authorities: Ministry of Energy — energy sector; Ministry of Infrastructure — transport sector; Ministry of Digital Transformation — digital infrastructure and communications; Ministry of Health — healthcare sector; National Bank of Ukraine — financial services sector; Ministry of Defence — defence sector. Where an infrastructure object spans multiple sectors, the sector competent authority shall be determined by the National Coordinator based on the primary essential service provided."
+    },
+    {
+      "provision_ref": "art7",
+      "section": "7",
+      "title": "Article 7. Cross-Border Critical Infrastructure",
+      "content": "Where a critical infrastructure object is owned or operated by a legal entity registered in Ukraine and is located on the territory of another state, or where a foreign critical infrastructure object has a significant impact on the security of Ukraine, the National Coordinator shall: (1) notify the relevant national authority in the other state of the existence of cross-border critical infrastructure dependencies; (2) cooperate with the relevant authorities of other states, including EU member states within the framework established by Directive (EU) 2022/2557, for the coordinated protection of critical infrastructure of European significance; (3) conclude bilateral or multilateral agreements on the protection of cross-border critical infrastructure. The National Coordinator shall identify critical infrastructure objects of European significance — those whose disruption would significantly affect at least three EU member states — and shall notify the European Commission and relevant EU member states of such identification. Ukraine shall participate in the work of the EU Critical Entities Resilience Group established pursuant to Directive (EU) 2022/2557 as an observer pending EU accession."
+    },
+    {
+      "provision_ref": "art8",
+      "section": "8",
+      "title": "Article 8. State Support and Financing",
+      "content": "The state shall provide support to critical infrastructure operators through: (1) funding from the state budget for the implementation of resilience measures for state-owned critical infrastructure objects; (2) tax incentives for private operators investing in critical infrastructure protection measures; (3) technical assistance and information sharing by competent authorities; (4) training programmes for security personnel of critical infrastructure operators; (5) coordinating international technical and financial assistance for critical infrastructure protection. The Cabinet of Ministers shall annually determine the list of critical infrastructure objects subject to priority state support and the funding allocated for their protection. Private critical infrastructure operators may receive reimbursement from the state for the costs of implementing mandatory security measures where such measures are imposed by the National Coordinator and exceed commercially reasonable standards. Ukraine shall develop critical infrastructure resilience programmes with the support of EU institutions and partner states as part of post-conflict reconstruction."
+    },
+    {
+      "provision_ref": "art9",
+      "section": "9",
+      "title": "Article 9. Liability for Non-Compliance",
+      "content": "Officials of critical infrastructure operators who have failed to comply with the resilience obligations under this Law shall bear administrative liability. Administrative sanctions: failure to conduct a risk assessment — fine of 50 to 100 times the minimum wage; failure to develop a resilience plan — fine of 100 to 200 times the minimum wage; failure to report a significant incident within the prescribed period — fine of 50 to 150 times the minimum wage; failure to appoint a security liaison officer — fine of 20 to 50 times the minimum wage; obstructing the conduct of inspections by authorities — fine of 100 to 300 times the minimum wage. Where non-compliance with resilience obligations has materially contributed to a significant incident causing damage to persons or property — civil liability and compensation under general civil law provisions. In conditions of martial law, deliberate failure by a critical infrastructure operator to maintain resilience measures may constitute a criminal offence under the Criminal Code of Ukraine."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "критична інфраструктура (critical infrastructure)",
+      "definition": "Infrastructure objects and systems whose disruption, damage or destruction would have a significant negative impact on the security of Ukraine, the life and health of citizens, the economic situation, or the effective functioning of state bodies.",
+      "source_provision": "art1"
+    },
+    {
+      "term": "оператор критичної інфраструктури (critical infrastructure operator)",
+      "definition": "A legal entity of public or private law that operates an object included in the register of critical infrastructure objects.",
+      "source_provision": "art1"
+    },
+    {
+      "term": "стійкість (resilience)",
+      "definition": "The ability of a critical entity to prevent, protect against, respond to, adapt to, withstand, and recover from incidents.",
+      "source_provision": "art1"
+    }
+  ]
+}

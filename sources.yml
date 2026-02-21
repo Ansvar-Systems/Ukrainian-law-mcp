@@ -1,0 +1,25 @@
+schema_version: "1.0"
+mcp_name: "Ukrainian Law MCP"
+jurisdiction: "UA"
+
+sources:
+  - name: "Verkhovna Rada"
+    authority: "Verkhovna Rada"
+    official_portal: "https://zakon.rada.gov.ua"
+    retrieval_method: "HTML_SCRAPE"
+    update_frequency: "weekly"
+    last_ingested: "2026-02-21"
+    license_or_terms:
+      type: "Government Open Data"
+      url: "https://zakon.rada.gov.ua"
+      summary: "Official legislative texts are public domain"
+    coverage:
+      scope: "Data protection, cybersecurity, e-commerce, criminal law cyber provisions"
+      limitations: "AI-generated seed data; full official ingestion pending"
+    languages:
+      - "uk"
+
+data_freshness:
+  automated_checks: true
+  check_frequency: "weekly"
+  last_verified: "2026-02-21"

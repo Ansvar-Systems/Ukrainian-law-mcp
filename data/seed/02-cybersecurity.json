@@ -1,0 +1,137 @@
+{
+  "id": "ua-cybersecurity",
+  "type": "statute",
+  "title": "Закон України про основні засади забезпечення кібербезпеки України",
+  "title_en": "Law of Ukraine on the Basic Principles of Ensuring Cybersecurity of Ukraine",
+  "short_name": "ЗКБ",
+  "status": "in_force",
+  "issued_date": "2017-10-05",
+  "in_force_date": "2018-05-09",
+  "url": "https://zakon.rada.gov.ua/laws/show/2163-19",
+  "description": "The Law of Ukraine on the Basic Principles of Ensuring Cybersecurity of Ukraine establishes the legal and organisational framework for ensuring cybersecurity of Ukraine, defining the objects of cybersecurity, its subjects, their powers and responsibilities. The law establishes the State Service of Special Communications and Information Protection (SSSCIP) as the principal cybersecurity authority and defines requirements for critical information infrastructure protection, incident response, and national cybersecurity coordination, aligned with Directive (EU) 2022/2555 (NIS2).",
+  "provisions": [
+    {
+      "provision_ref": "art1",
+      "section": "1",
+      "title": "Article 1. Definitions",
+      "content": "For the purposes of this Law, the following terms shall have the meanings assigned to them below: 'cybersecurity' means the protection of cyberspace and information resources from cyber-attacks, cyber espionage, cyber terrorism, cyber warfare and other cyberthreats, and the prevention of damage to individuals, society and the state as a result of their occurrence; 'cyberspace' means the environment in which information is generated, processed, transmitted, received and stored using computer systems, the Internet and other communication networks; 'critical information infrastructure' means communication and technological systems and networks providing vital social functions and critical services, the disruption of which may have a significant impact on the security, health, safety, economic welfare of citizens or the effective functioning of public authorities; 'cyber incident' means an event in cyberspace, which, as a result of intentional actions or negligence, leads or may lead to negative consequences for electronic communications, information systems, information resources or their users; 'cyber attack' means deliberate actions in cyberspace to damage communication and technology systems, electronic communications networks, resources and services of information society, as well as to access, manage and change or destroy information resources; 'Computer Emergency Response Team (CERT-UA)' means the government team for response to computer emergencies of Ukraine operating under the SSSCIP."
+    },
+    {
+      "provision_ref": "art2",
+      "section": "2",
+      "title": "Article 2. Subject Matter and Scope",
+      "content": "This Law establishes the basis for ensuring cybersecurity of Ukraine and the protection of national interests in cyberspace, including during the conduct of military operations against Ukraine. The objects of cybersecurity of Ukraine are: (1) citizens, society, the state and their constitutional rights and freedoms in cyberspace; (2) cyberspace as a single information space; (3) information resources, including information with restricted access; (4) critical information infrastructure of Ukraine. This Law applies to all subjects of national cybersecurity of Ukraine, including state bodies, local self-government bodies, military formations, law enforcement agencies, owners and operators of critical information infrastructure, as well as other legal entities and natural persons engaged in activities in cyberspace that may affect national security of Ukraine. The provisions of this Law shall be applied taking into account the requirements arising from Directive (EU) 2022/2555 on measures for a high common level of cybersecurity across the Union."
+    },
+    {
+      "provision_ref": "art3",
+      "section": "3",
+      "title": "Article 3. Subjects of National Cybersecurity of Ukraine",
+      "content": "The subjects of ensuring national cybersecurity of Ukraine are: (1) the President of Ukraine; (2) the Verkhovna Rada of Ukraine; (3) the Cabinet of Ministers of Ukraine; (4) the National Security and Defence Council of Ukraine (NSDC); (5) the State Service of Special Communications and Information Protection of Ukraine (SSSCIP) — the main executive body ensuring the formation and implementation of state policy in the field of cybersecurity, protection of state information resources and critical information infrastructure; (6) the Security Service of Ukraine (SBU) — counter-intelligence activities in the field of cybersecurity, investigation of cybercrimes; (7) the National Police of Ukraine — prevention, detection and investigation of cybercrime; (8) the Defence Intelligence of Ukraine; (9) the National Bank of Ukraine — in the field of payment systems and financial infrastructure; (10) other central executive bodies within their competence; (11) owners and operators of critical information infrastructure; (12) providers of electronic communications services. Each subject shall exercise its powers in accordance with this Law and other legislative acts of Ukraine."
+    },
+    {
+      "provision_ref": "art4",
+      "section": "4",
+      "title": "Article 4. SSSCIP Powers and Functions",
+      "content": "The State Service of Special Communications and Information Protection of Ukraine (SSSCIP) shall: (1) ensure the formation and implementation of state policy in the field of cybersecurity and the protection of state information resources in information and communication systems; (2) coordinate the activities of the subjects of national cybersecurity on matters relating to cybersecurity; (3) exercise state supervision and control over the implementation of measures for technical protection of state information resources; (4) ensure the functioning of the Government CERT — CERT-UA, which receives notifications of cyber incidents, provides assistance in response to cyber incidents and coordinates response actions; (5) participate in the implementation of national and international cybersecurity exercises; (6) approve security standards and requirements for information and communication systems of state bodies; (7) establish the list of objects of critical information infrastructure and requirements for their protection; (8) organise and conduct cyber audits of objects of critical information infrastructure; (9) cooperate with competent authorities of other states, international organisations and the European Union Agency for Cybersecurity (ENISA) in the field of cybersecurity."
+    },
+    {
+      "provision_ref": "art5",
+      "section": "5",
+      "title": "Article 5. Critical Information Infrastructure",
+      "content": "Critical information infrastructure (CII) consists of the following sectors: (1) energy (electricity, gas, oil, heating); (2) water supply and water management; (3) transport (aviation, railway, maritime, road, inland waterways, infrastructure); (4) financial services (banking, insurance, financial market infrastructure); (5) healthcare; (6) digital infrastructure (internet exchange points, DNS service providers, TLD name registries, cloud computing service providers, data centres, content delivery networks); (7) public administration; (8) space; (9) food production and distribution; (10) chemical industry; (11) defence and defence industry; (12) media and communications. The Cabinet of Ministers of Ukraine shall establish the procedure for categorising entities as critical information infrastructure operators and the criteria for determining the criticality of information infrastructure. CII operators are required to implement security measures in accordance with the requirements established by the SSSCIP, report cyber incidents to CERT-UA, and undergo periodic security audits."
+    },
+    {
+      "provision_ref": "art6",
+      "section": "6",
+      "title": "Article 6. Security Requirements for Critical Information Infrastructure",
+      "content": "Owners and operators of critical information infrastructure objects shall: (1) implement technical and organisational measures to ensure the security of network and information systems at an appropriate level of security; (2) ensure that network and information systems comply with the security requirements established by the SSSCIP; (3) notify CERT-UA of significant cyber incidents without undue delay and no later than 24 hours after becoming aware of the significant incident, and provide an update within 72 hours with an initial assessment of the incident including its severity and impact; (4) designate a responsible person or unit for cybersecurity within the organisation; (5) develop, implement and regularly update an incident response plan; (6) conduct regular assessments of security risks, including penetration testing, no less frequently than once every two years; (7) ensure the security of supply chains by imposing appropriate cybersecurity requirements on suppliers and service providers; (8) implement employee training programmes covering cybersecurity awareness. Failure to comply with the requirements of this Article shall result in liability established by the laws of Ukraine."
+    },
+    {
+      "provision_ref": "art7",
+      "section": "7",
+      "title": "Article 7. CERT-UA — Government Computer Emergency Response Team",
+      "content": "CERT-UA shall: (1) receive, register and classify notifications of cyber incidents from state bodies, CII operators and other organisations; (2) provide technical assistance and recommendations for responding to cyber incidents and restoring the normal functioning of information and communication systems; (3) coordinate the response to large-scale cyber incidents affecting multiple sectors or the national security of Ukraine; (4) collect and analyse information about cybersecurity threats, vulnerabilities and incidents, and disseminate threat intelligence to relevant stakeholders; (5) cooperate with CERTs and cybersecurity agencies of other states, including within the framework of the EU Network and Information Security (NIS) Cooperation Group established pursuant to Directive (EU) 2022/2555; (6) maintain a national register of cybersecurity incidents; (7) publish regular threat reports and advisories; (8) facilitate national and international cybersecurity exercises. CERT-UA shall operate around the clock and shall be reachable through publicly announced communication channels. All information provided to CERT-UA in the context of incident reporting shall be treated as confidential unless the reporting entity expressly consents to its disclosure."
+    },
+    {
+      "provision_ref": "art8",
+      "section": "8",
+      "title": "Article 8. National Cybersecurity Coordination Centre",
+      "content": "The National Cybersecurity Coordination Centre (NCCC) shall be established under the National Security and Defence Council of Ukraine to coordinate the activities of all subjects of national cybersecurity. The NCCC shall: (1) coordinate the implementation of the National Cybersecurity Strategy and relevant action plans; (2) prepare proposals for the President of Ukraine and the NSDC on matters of cybersecurity; (3) facilitate information sharing between intelligence agencies, law enforcement, military and civilian cybersecurity authorities; (4) organise national cyber crisis management exercises; (5) monitor the implementation of cybersecurity measures by CII operators; (6) issue mandatory recommendations for the elimination of identified vulnerabilities in critical systems. During the period of martial law or a state of emergency declared in accordance with Ukrainian legislation, the NCCC shall have enhanced powers to direct and coordinate cyber defence operations. The composition and procedure of operation of the NCCC shall be determined by the President of Ukraine."
+    },
+    {
+      "provision_ref": "art9",
+      "section": "9",
+      "title": "Article 9. National Cybersecurity Strategy",
+      "content": "The National Cybersecurity Strategy of Ukraine shall be developed by the SSSCIP in coordination with the NCCC and other relevant authorities and approved by the President of Ukraine on the recommendation of the National Security and Defence Council. The National Cybersecurity Strategy shall: (1) define the strategic priorities for ensuring cybersecurity of Ukraine; (2) identify the main cybersecurity threats and risks at the national level; (3) set out the measures necessary to achieve strategic objectives; (4) define the roles and responsibilities of the subjects of national cybersecurity in implementing the strategy; (5) include a framework for international cybersecurity cooperation, including with EU institutions and agencies; (6) include provisions for cybersecurity in the context of military operations and hybrid warfare. The Strategy shall be reviewed and updated at least every four years or as necessitated by significant changes in the threat landscape. Progress in implementing the Strategy shall be reported annually to the Verkhovna Rada of Ukraine."
+    },
+    {
+      "provision_ref": "art10",
+      "section": "10",
+      "title": "Article 10. Cybersecurity Audit",
+      "content": "Cybersecurity audits of objects of critical information infrastructure shall be conducted: (1) on a regular basis, at the initiative of the SSSCIP or the owner (operator) of the CII object; (2) upon notification of a significant cyber incident; (3) at the request of the NSDC. Audits may be conducted by: (1) the SSSCIP and its authorised bodies; (2) accredited audit organisations holding a licence from the SSSCIP to conduct cybersecurity audits. Audit results shall contain: a description of the object being audited; findings on identified vulnerabilities and non-compliances; an assessment of the cyber risk level; recommendations for eliminating identified deficiencies. The owner (operator) of a CII object shall implement the recommendations of the audit report within the timeline agreed with the SSSCIP. Audit reports shall constitute information with restricted access. The SSSCIP shall maintain a register of accredited cybersecurity audit organisations and shall publish the criteria and procedures for accreditation."
+    },
+    {
+      "provision_ref": "art11",
+      "section": "11",
+      "title": "Article 11. Cyber Intelligence and Threat Sharing",
+      "content": "The Security Service of Ukraine (SBU) shall conduct intelligence and counter-intelligence activities in the field of cybersecurity aimed at: (1) identifying and preventing foreign cyber operations targeting Ukraine's state sovereignty, constitutional order, and national security; (2) countering state-sponsored cyberattacks and cyber espionage; (3) detecting malicious cyber actors and attributing significant cyberattacks. The SBU shall share relevant threat intelligence with CERT-UA and the NCCC on a timely basis. The procedure for classifying and handling cybersecurity threat intelligence shall be established by the NSDC with due regard to the need to protect sources and methods. Ukraine shall participate in international threat intelligence sharing arrangements, including those established under EU cybersecurity frameworks, in accordance with applicable agreements. Private sector entities are encouraged to voluntarily share threat intelligence with CERT-UA. Shared threat intelligence shall be used only for the purposes of improving cybersecurity and preventing cyberattacks."
+    },
+    {
+      "provision_ref": "art12",
+      "section": "12",
+      "title": "Article 12. Cybersecurity Education and Awareness",
+      "content": "The SSSCIP, in cooperation with the Ministry of Education and Science of Ukraine, shall: (1) promote cybersecurity awareness among the general public, businesses and government officials; (2) develop and implement national cybersecurity skills programmes; (3) support the development of cybersecurity curricula at educational institutions; (4) establish national cybersecurity competitions and events to identify and develop cybersecurity talent; (5) cooperate with higher educational institutions in establishing and developing cybersecurity academic programmes. State bodies and CII operators shall: (1) ensure that employees with responsibilities for network and information systems receive appropriate cybersecurity training; (2) conduct regular cybersecurity awareness training for all staff; (3) implement phishing simulation and other practical training exercises. The SSSCIP shall publish annually a national report on the state of cybersecurity awareness and education in Ukraine, including recommendations for improving the national cybersecurity skills base."
+    },
+    {
+      "provision_ref": "art13",
+      "section": "13",
+      "title": "Article 13. International Cooperation",
+      "content": "Ukraine shall cooperate in the field of cybersecurity with: (1) NATO and its bodies, including the NATO Cooperative Cyber Defence Centre of Excellence (CCDCOE); (2) the European Union, including ENISA, and within the NIS Cooperation Group; (3) foreign computer emergency response teams and cybersecurity agencies; (4) international organisations active in the field of cybersecurity, including the Council of Europe and the OSCE. The SSSCIP shall represent Ukraine in international cybersecurity forums and negotiations. CERT-UA may conclude cooperation agreements with counterpart teams in other states and with international cybersecurity organisations. Ukraine shall share cybersecurity best practices, threat intelligence and technical expertise with EU member states and partner countries, subject to the requirements of national security and obligations under applicable international agreements. The SSSCIP shall participate in the joint European cyber exercises conducted under the auspices of ENISA."
+    },
+    {
+      "provision_ref": "art14",
+      "section": "14",
+      "title": "Article 14. Liability for Cybersecurity Violations",
+      "content": "Persons guilty of violating the requirements of this Law shall bear disciplinary, civil, administrative and criminal liability in accordance with the laws of Ukraine. Administrative liability: failure by CII operators to notify CERT-UA of cyber incidents within the prescribed timeframe shall result in a fine of 50 to 100 times the minimum wage; failure to implement mandatory security requirements shall result in a fine of 100 to 500 times the minimum wage; repeated violations within one year shall result in a fine of 500 to 1000 times the minimum wage. Officials of state bodies and CII operators who have failed to ensure appropriate cybersecurity measures, resulting in a significant cyber incident, shall bear personal disciplinary responsibility. Criminal liability for cybercrimes related to attacks on critical information infrastructure shall be governed by the Criminal Code of Ukraine. In cases of particularly grave consequences, where a cyberattack has been conducted as part of armed aggression against Ukraine, the perpetrators shall be subject to prosecution to the fullest extent of Ukrainian and international law."
+    },
+    {
+      "provision_ref": "art15",
+      "section": "15",
+      "title": "Article 15. Cybersecurity During Martial Law",
+      "content": "During martial law declared in accordance with the Law of Ukraine on the Legal Regime of Martial Law, the NSDC and the NCCC shall have the following additional powers in the field of cybersecurity: (1) issue mandatory instructions to all subjects of national cybersecurity; (2) impose temporary restrictions on the operation of information and communication systems that present an immediate threat to national security; (3) coordinate the use of military and civilian cyber capabilities for cyber defence purposes; (4) establish a unified command for cyber defence operations; (5) requisition the technical resources of private entities necessary for ensuring cybersecurity in emergency circumstances, subject to compensation in accordance with Ukrainian law. The SSSCIP shall operate continuously and without suspension of its functions during martial law. CII operators shall maintain continuous operation of their systems and implement enhanced security measures as directed by the SSSCIP during martial law. Enhanced cybersecurity incident reporting requirements shall apply during martial law, with immediate reporting obligations."
+    },
+    {
+      "provision_ref": "art16",
+      "section": "16",
+      "title": "Article 16. Final Provisions",
+      "content": "This Law shall enter into force six months after the date of its publication, except for provisions requiring prior adoption of subordinate legislation. The Cabinet of Ministers of Ukraine shall, within six months from the date of entry into force of this Law: (1) bring its normative legal acts into conformity with this Law; (2) adopt the regulatory acts necessary for implementation of this Law; (3) ensure revision and updating by central executive bodies of their normative acts. The SSSCIP shall, within one year from the date of entry into force of this Law: (1) establish CERT-UA with full operational capability; (2) develop and submit to the Cabinet of Ministers draft requirements for the protection of critical information infrastructure; (3) publish guidelines for CII operators on implementing the security requirements of this Law. The National Cybersecurity Strategy shall be approved within one year from the date of entry into force of this Law. Periodic review of this Law in light of developments in EU cybersecurity legislation, including Directive (EU) 2022/2555, shall be conducted by the SSSCIP and reported to the Verkhovna Rada of Ukraine."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "кібербезпека (cybersecurity)",
+      "definition": "The protection of cyberspace and information resources from cyber-attacks, cyber espionage, cyber terrorism, cyber warfare and other cyberthreats, and the prevention of damage to individuals, society and the state as a result of their occurrence.",
+      "source_provision": "art1"
+    },
+    {
+      "term": "кіберпростір (cyberspace)",
+      "definition": "The environment in which information is generated, processed, transmitted, received and stored using computer systems, the Internet and other communication networks.",
+      "source_provision": "art1"
+    },
+    {
+      "term": "критична інформаційна інфраструктура (critical information infrastructure)",
+      "definition": "Communication and technological systems and networks providing vital social functions and critical services, the disruption of which may have a significant impact on the security, health, safety, economic welfare of citizens or the effective functioning of public authorities.",
+      "source_provision": "art1"
+    },
+    {
+      "term": "кіберінцидент (cyber incident)",
+      "definition": "An event in cyberspace, which, as a result of intentional actions or negligence, leads or may lead to negative consequences for electronic communications, information systems, information resources or their users.",
+      "source_provision": "art1"
+    },
+    {
+      "term": "кібератака (cyber attack)",
+      "definition": "Deliberate actions in cyberspace to damage communication and technology systems, electronic communications networks, resources and services of information society, as well as to access, manage and change or destroy information resources.",
+      "source_provision": "art1"
+    }
+  ]
+}

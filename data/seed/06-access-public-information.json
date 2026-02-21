@@ -1,0 +1,79 @@
+{
+  "id": "ua-access-public-information",
+  "type": "statute",
+  "title": "Закон України про доступ до публічної інформації",
+  "title_en": "Law of Ukraine on Access to Public Information",
+  "short_name": "ЗДПІ",
+  "status": "in_force",
+  "issued_date": "2011-01-13",
+  "in_force_date": "2011-05-09",
+  "url": "https://zakon.rada.gov.ua/laws/show/2939-17",
+  "description": "The Law of Ukraine on Access to Public Information establishes the procedure for exercising and enforcing the right of access to public information held by state bodies, local self-government bodies, and other subjects vested with public authority. The Law reflects Ukraine's constitutional guarantee of freedom of information and aligns with Council of Europe standards on access to official documents.",
+  "provisions": [
+    {
+      "provision_ref": "art1",
+      "section": "1",
+      "title": "Article 1. Public Information and Its Status",
+      "content": "Public information means reflected and documented by any means and on any medium information that was received or created in the process of performance of their powers by subjects of powers, or, which is kept by other subjects in accordance with the legislation, as well as information about the activities of subjects of powers. Public information is open, except as otherwise provided by law. The subjects of authority shall be obliged to: disclose and regularly update information about their activities; ensure access to information upon request; provide information in accessible and comprehensive forms. Documents that have been held for more than 75 years and that cannot be classified as state secrets shall be transferred to permanent public storage and made freely accessible. The right of access to public information may be restricted only in the interests of national security, territorial integrity, public order, prevention of crimes, protection of health, rights and freedoms of other persons, for the prevention of disclosure of confidential information, for the maintenance of the authority and impartiality of justice, and only in the event of such restriction being proportionate, necessary in a democratic society, and justified by the law."
+    },
+    {
+      "provision_ref": "art2",
+      "section": "2",
+      "title": "Article 2. Subjects of Authority Obliged to Provide Access",
+      "content": "The following are obligated to provide access to public information: (1) state bodies of all levels; (2) local self-government bodies; (3) state and municipal enterprises, institutions and organisations; (4) legal entities of public law funded from the state or local budgets by more than 50 percent; (5) entities delegated powers of a state body or local self-government body; (6) entities whose ownership or control passes to the state under martial law or nationalisation procedures; (7) legal entities of private law that provide public services or whose activity significantly affects the rights of persons. Political parties, civil society organisations and religious organisations shall not be deemed subjects of authority for the purposes of this Law, but shall provide access to information on their status, charter, governing bodies and budget where they receive state funding. The Cabinet of Ministers of Ukraine shall determine the categories of information subject to proactive disclosure by subjects of authority."
+    },
+    {
+      "provision_ref": "art3",
+      "section": "3",
+      "title": "Article 3. Procedure for Requesting Information",
+      "content": "Any person may submit a request for information to the subject of authority. The request may be submitted in written form (in person, by post or by electronic means) or orally. A written request for information shall contain: (1) the first name, last name and patronymic (for natural persons), or the name of the legal entity making the request; (2) the postal address or electronic mail address to which the response shall be sent; (3) a general description of the information being requested. A subject of authority shall not be entitled to refuse a request on the ground that the request does not indicate the purpose for which the information is requested. The subject of authority shall provide the requested information or a reasoned refusal within five business days from the date of receipt of the request. Where the requested information contains documents of significant volume or is distributed among different units, the response period may be extended to up to 20 business days, subject to notification of the requester. Requests concerning threats to the life or liberty of persons, or environmental emergencies, shall be responded to within 48 hours."
+    },
+    {
+      "provision_ref": "art4",
+      "section": "4",
+      "title": "Article 4. Grounds for Refusal",
+      "content": "A subject of authority may refuse to provide requested information only where: (1) the requested information is classified as state secret in accordance with the Law of Ukraine on State Secret; (2) the requested information constitutes confidential information provided by a third party in circumstances where that third party reasonably expected confidentiality; (3) the requested information is subject to official secrecy established by other laws; (4) the requested information constitutes medical, banking, tax or other information protected by specialised legislation; (5) disclosure would endanger the life or safety of persons; (6) the information relates to the conduct of ongoing criminal or administrative proceedings; (7) the information concerns matters of national security, defence or international relations where disclosure would cause real harm. In refusing access, the subject of authority shall issue a written reasoned refusal specifying the legal grounds for refusal. Refusals must pass the three-part test: (1) the restriction serves one of the purposes listed above; (2) disclosure would cause real harm; (3) the harm from disclosure outweighs the public interest in disclosure."
+    },
+    {
+      "provision_ref": "art5",
+      "section": "5",
+      "title": "Article 5. Proactive Disclosure",
+      "content": "Subjects of authority shall proactively publish the following categories of information without any request: (1) general information about the subject of authority including its legal status, location, powers and structure; (2) regulatory acts, normative legal acts and other legally binding documents adopted by the subject of authority; (3) reports and analytics on the activities of the subject of authority; (4) information on revenues and expenditures of the budget managed by the subject of authority; (5) procurement plans and results; (6) information on official travel of heads of the subject of authority and related expenses; (7) annual activity reports; (8) job vacancy announcements; (9) information about decisions made at public meetings; (10) draft regulatory acts open for public comment. Proactively disclosed information shall be published on the official website of the subject of authority in an accessible format and in machine-readable form consistent with open data standards. The disclosure shall be kept current and historically searchable."
+    },
+    {
+      "provision_ref": "art6",
+      "section": "6",
+      "title": "Article 6. Open Data",
+      "content": "Information published by subjects of authority in proactive disclosure mode shall, to the extent technically practicable, be made available as open data: in electronic form, in open non-proprietary machine-readable formats, with no restrictions on use, redistribution and processing. The Cabinet of Ministers of Ukraine shall determine the list of data sets that are subject to mandatory publication as open data, taking into account the requirements of Directive 2003/98/EC on the re-use of public sector information and its successors. Open data shall be published on the national open data portal maintained by the Cabinet of Ministers. Subjects of authority shall not impose conditions restricting access to or re-use of information published as open data, other than the requirement to attribute the source. Personal data and information constituting a state or other secret may not be published as open data. Subjects of authority shall designate a responsible person for open data and report annually on the implementation of open data obligations."
+    },
+    {
+      "provision_ref": "art7",
+      "section": "7",
+      "title": "Article 7. Appeal of Refusals",
+      "content": "A person who has been refused access to information or who has not received a response within the prescribed period may appeal the refusal or silence: (1) to the head of the subject of authority who issued the refusal; (2) to the Ukrainian Parliament Commissioner for Human Rights; (3) to the court. An appeal to the head of the subject of authority shall be lodged within 30 days of receipt of the refusal and shall be considered within 10 days. An appeal to the Commissioner for Human Rights may be lodged at any time. Court proceedings for the protection of the right of access to public information shall be initiated in accordance with the Code of Administrative Justice of Ukraine. The court may order the subject of authority to provide the requested information, declare the refusal unlawful and award compensation for damages. An appeal shall not suspend the obligation of the subject of authority to provide information in response to other requests. The Commissioner for Human Rights shall publish annual reports on the state of access to public information in Ukraine."
+    },
+    {
+      "provision_ref": "art8",
+      "section": "8",
+      "title": "Article 8. Liability for Violations",
+      "content": "Officials of subjects of authority guilty of the following violations shall bear administrative and disciplinary liability: (1) unlawful refusal to provide or untimely provision of information; (2) unlawful classification of information as restricted; (3) obstruction of access to a public meeting; (4) failure to publish information subject to proactive disclosure; (5) violation of the requirements for the form of the response to an information request. Administrative sanctions for violations of this Law shall be imposed by courts upon the application of the Ukrainian Parliament Commissioner for Human Rights. Intentional destruction, concealment, falsification or unauthorised modification of public information may constitute a criminal offence under the Criminal Code of Ukraine. Disciplinary liability of officials shall be imposed by the head of the subject of authority or by a superior body. The Commissioner for Human Rights shall prepare and submit to the Verkhovna Rada annual reports on the implementation of this Law."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "публічна інформація (public information)",
+      "definition": "Reflected and documented by any means and on any medium information that was received or created in the process of performance of their powers by subjects of powers, or which is kept by other subjects in accordance with the legislation, as well as information about the activities of subjects of powers.",
+      "source_provision": "art1"
+    },
+    {
+      "term": "відкриті дані (open data)",
+      "definition": "Information published by subjects of authority in electronic form, in open non-proprietary machine-readable formats, with no restrictions on use, redistribution and processing, consistent with open data standards.",
+      "source_provision": "art6"
+    },
+    {
+      "term": "суб'єкт владних повноважень (subject of authority)",
+      "definition": "State bodies, local self-government bodies, state and municipal enterprises, institutions and organisations, as well as entities delegated public powers, obliged to provide access to public information.",
+      "source_provision": "art2"
+    }
+  ]
+}

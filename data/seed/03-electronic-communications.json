@@ -1,0 +1,103 @@
+{
+  "id": "ua-electronic-communications",
+  "type": "statute",
+  "title": "Закон України про електронні комунікації",
+  "title_en": "Law of Ukraine on Electronic Communications",
+  "short_name": "ЗЕК",
+  "status": "in_force",
+  "issued_date": "2020-12-16",
+  "in_force_date": "2021-12-31",
+  "url": "https://zakon.rada.gov.ua/laws/show/1089-20",
+  "description": "The Law of Ukraine on Electronic Communications governs the provision of electronic communications services, the operation of electronic communications networks, the use of radio frequencies and numbering resources, and the regulation of the electronic communications market. The Law was adopted to align Ukrainian legislation with Directive (EU) 2018/1972 (European Electronic Communications Code) and the ePrivacy Directive 2002/58/EC as part of Ukraine's EU Association Agreement obligations.",
+  "provisions": [
+    {
+      "provision_ref": "art1",
+      "section": "1",
+      "title": "Article 1. Purpose and Scope",
+      "content": "This Law establishes the legal framework for electronic communications in Ukraine, governing the provision of electronic communications services, the operation of electronic communications networks, the use of the radio frequency spectrum and numbering resources, and the activities of the national regulatory authority. The objectives of this Law are: (1) to ensure the availability of high-quality, affordable and reliable electronic communications services for all citizens and organisations in Ukraine; (2) to promote competition in the electronic communications market; (3) to establish conditions for the development of digital infrastructure; (4) to protect the rights and interests of end-users of electronic communications services; (5) to align the Ukrainian electronic communications regulatory framework with Directive (EU) 2018/1972 of the European Parliament and of the Council. This Law applies to all electronic communications networks and services provided in Ukraine, regardless of the technology used."
+    },
+    {
+      "provision_ref": "art2",
+      "section": "2",
+      "title": "Article 2. Definitions",
+      "content": "For the purposes of this Law: 'electronic communications service' means a service normally provided for remuneration via electronic communications networks which encompasses interpersonal communications services, number-based interpersonal communications services, number-independent interpersonal communications services, and internet access services, excluding broadcasting services; 'electronic communications network' means transmission systems, switching or routing equipment and other resources, including network elements which are not active, which permit the conveyance of signals by wire, radio, optical or other electromagnetic means, including satellite networks, fixed and mobile terrestrial networks, electricity cable systems; 'provider' means a legal entity or natural person — entrepreneur providing electronic communications services or operating electronic communications networks; 'end-user' means a person using or requesting publicly available electronic communications services, not being a provider of electronic communications networks or services; 'National Commission for State Regulation of Electronic Communications, Radio Frequency Spectrum and Postal Services' (NCEC) means the national regulatory authority for electronic communications in Ukraine."
+    },
+    {
+      "provision_ref": "art3",
+      "section": "3",
+      "title": "Article 3. National Regulatory Authority",
+      "content": "The National Commission for State Regulation of Electronic Communications, Radio Frequency Spectrum and Postal Services (NCEC) is the national regulatory authority for electronic communications. The NCEC shall: (1) regulate the electronic communications market and exercise state supervision over compliance with this Law; (2) promote competition and investment in electronic communications infrastructure and services; (3) protect the rights and interests of end-users; (4) manage the radio frequency spectrum and numbering resources of Ukraine; (5) issue general authorisations and specific rights of use for radio frequencies and numbers; (6) resolve disputes between providers and between providers and end-users; (7) cooperate with the regulatory authorities of other states and the Body of European Regulators for Electronic Communications (BEREC) established under Regulation (EU) 2018/1971. The NCEC shall act with independence from providers and government bodies in making regulatory decisions. The NCEC shall publish annual reports on the state of the electronic communications market in Ukraine."
+    },
+    {
+      "provision_ref": "art4",
+      "section": "4",
+      "title": "Article 4. General Authorisation",
+      "content": "The right to provide electronic communications services and operate electronic communications networks in Ukraine shall be based on a general authorisation. Any provider that complies with the conditions established by this Law and subordinate legislation shall have the right to provide services and operate networks under the general authorisation regime without requiring a prior decision by the NCEC. Providers shall notify the NCEC of their intention to commence the provision of services within 30 days of commencing activity. The notification shall contain: the name and registered address of the provider; a description of the network or service to be provided; the planned commencement date. The NCEC shall maintain a register of all notified providers, which shall be publicly accessible. The conditions attached to the general authorisation shall be limited to what is necessary and proportionate and shall cover: implementation of mandatory interoperability requirements; provision of information necessary for regulatory purposes; compliance with applicable data protection requirements; contribution to the financing of universal service obligations."
+    },
+    {
+      "provision_ref": "art5",
+      "section": "5",
+      "title": "Article 5. Rights and Obligations of Providers",
+      "content": "Providers of electronic communications services shall: (1) provide services in accordance with the terms of the general authorisation and any specific conditions attached to the provision of services; (2) ensure the continuous availability of emergency communications services (112) and provide location information to emergency services free of charge; (3) maintain the confidentiality of electronic communications and related traffic and location data; (4) implement appropriate technical and organisational measures to ensure the security and integrity of their networks and services; (5) implement lawful interception capabilities in accordance with the requirements established by the Security Service of Ukraine, the National Police and other authorised bodies; (6) retain traffic and location data for a period determined by the Cabinet of Ministers of Ukraine, subject to the requirements of the Law on Personal Data Protection; (7) notify the NCEC and end-users of significant security breaches or losses of integrity that have had a significant impact on the operation of networks or services; (8) ensure number portability for subscribers, enabling them to retain their telephone numbers when changing provider."
+    },
+    {
+      "provision_ref": "art6",
+      "section": "6",
+      "title": "Article 6. End-User Rights",
+      "content": "End-users of publicly available electronic communications services shall have the following rights: (1) to receive services of the quality specified in the contract and in technical standards; (2) to receive clear, comprehensive, reliable and easily accessible information on the prices and tariffs applicable to their service; (3) to receive a written or electronic contract containing all essential terms before commencement of service; (4) to terminate a contract of indefinite duration at any time with no more than one month's notice; (5) to port their telephone number to another provider within one working day; (6) to be compensated automatically for service outages exceeding the thresholds established by the NCEC; (7) to use any terminal equipment of their choice that meets the technical requirements, subject to applicable conformity rules; (8) to access emergency services free of charge from any terminal; (9) to receive transparent information on traffic management measures; (10) to protection of personal communications data in accordance with the Law on Personal Data Protection and the ePrivacy provisions of this Law."
+    },
+    {
+      "provision_ref": "art7",
+      "section": "7",
+      "title": "Article 7. Confidentiality of Communications",
+      "content": "Providers of electronic communications services shall ensure the confidentiality of communications transmitted through their networks and the confidentiality of related traffic data. The interception or recording of communications, and the access to, or storage of communications or traffic data, shall be prohibited except: (1) with the prior informed consent of the users concerned; (2) when legally authorised pursuant to the requirements established by the Code of Criminal Procedure of Ukraine and the laws governing the activities of the Security Service of Ukraine, the National Police and intelligence agencies; (3) where technically necessary for the transmission of communications, for a limited period only. Providers shall not process traffic data for purposes other than transmission, billing and quality management without the explicit consent of the subscriber. Location data may only be processed anonymously or with the subscriber's consent, except where necessary for emergency communications. Providers shall implement technical measures to protect communications against unauthorised interception, including through the use of encryption."
+    },
+    {
+      "provision_ref": "art8",
+      "section": "8",
+      "title": "Article 8. Radio Frequency Spectrum Management",
+      "content": "The radio frequency spectrum of Ukraine is an exclusive public resource of Ukraine. The management of the radio frequency spectrum shall be exercised by the NCEC in coordination with the State Service of Special Communications and Information Protection of Ukraine and the Ministry of Defence. Rights of use for radio frequencies shall be granted through: (1) general authorisation, for frequencies whose use does not require coordination; (2) individual licences, granted through competitive selection (auction or comparative selection), for frequencies whose use requires coordination or is subject to scarcity. Individual licences shall specify: the frequency band allocated; the technology and service to be provided; the territory covered; the duration of the licence (not less than 20 years for mobile communications); conditions for renewal and transfer. Fees for use of the radio frequency spectrum shall be established by the Cabinet of Ministers. The NCEC shall publish and regularly update a national table of frequency allocations consistent with the Radio Regulations of the International Telecommunication Union and, where applicable, EU frequency decisions."
+    },
+    {
+      "provision_ref": "art9",
+      "section": "9",
+      "title": "Article 9. Universal Service",
+      "content": "Universal service in the field of electronic communications shall comprise: (1) access to functional internet access service and voice communications services at a fixed location at an affordable price; (2) availability of public payphones in sufficient numbers to meet reasonable needs; (3) measures ensuring access to electronic communications services for persons with disabilities on terms equivalent to those available to other end-users. The NCEC shall assess whether the universal service requirements are being adequately met across Ukrainian territory. Where the NCEC determines that the market is not providing universal service, it may designate one or more providers as universal service providers through a transparent, non-discriminatory and proportionate procedure. Universal service obligations shall be compensated through: (1) a universal service fund financed by contributions from all providers proportional to their revenues; (2) direct state funding in accordance with applicable state aid rules. The NCEC shall review the scope of universal service at least every four years to take into account developments in technology and the availability of services."
+    },
+    {
+      "provision_ref": "art10",
+      "section": "10",
+      "title": "Article 10. Network Security",
+      "content": "Providers of electronic communications services and networks shall implement appropriate technical and organisational measures to appropriately manage the risks posed to the security of networks and services. These measures shall ensure a level of security of networks and services appropriate to the risk presented, having regard to the state of the art and shall, as a minimum, cover: (1) security in relation to the supply chain and in relation to the development, production, delivery and maintenance of networks and services; (2) security in relation to the handling of security incidents; (3) business continuity management; (4) monitoring, auditing and testing; (5) compliance with international standards. Providers shall notify the NCEC of any breach of security or loss of integrity that has had a significant impact on the operation of networks or services without undue delay and no later than 24 hours after becoming aware of the incident. The NCEC, in cooperation with the SSSCIP and CERT-UA, shall issue guidelines on the implementation of security measures, taking into account ENISA guidelines and the requirements of Directive (EU) 2022/2555."
+    },
+    {
+      "provision_ref": "art11",
+      "section": "11",
+      "title": "Article 11. Infrastructure Sharing and Access",
+      "content": "Providers of electronic communications networks may, and where requested by another provider shall, negotiate agreements for the sharing of physical infrastructure, including buildings, masts, towers, ducts, conduits, manholes, cabinets, poles, in-building wiring, and base stations. The NCEC may impose obligations for access to and sharing of physical infrastructure on providers with significant market power (SMP), as well as on operators of physical infrastructure not themselves active in electronic communications markets. In areas where investment in new high-capacity networks is technically difficult or economically inefficient, providers shall be required to share access to existing infrastructure on fair, reasonable and non-discriminatory (FRAND) terms. The NCEC shall publish guidelines on infrastructure access pricing methodology. Owners of public infrastructure (roads, railways, buildings) shall grant providers the right to deploy network infrastructure on fair and non-discriminatory terms. Disputes about infrastructure sharing shall be resolved by the NCEC within 90 days of referral."
+    },
+    {
+      "provision_ref": "art12",
+      "section": "12",
+      "title": "Article 12. Liability and Sanctions",
+      "content": "Violations of this Law shall result in the following sanctions applied by the NCEC: (1) warning, requiring the provider to remedy the violation within a specified period; (2) imposition of a financial penalty: for failure to notify commencement of activity — fine of up to 0.1 percent of the provider's annual revenue; for violation of end-user rights provisions — fine of up to 1 percent of annual revenue; for violations of universal service obligations — fine of up to 2 percent of annual revenue; for violation of SMP obligations — fine of up to 4 percent of annual revenue; for failure to implement security measures or to notify the NCEC of security incidents — fine of up to 2 percent of annual revenue; (3) suspension or revocation of the right to use specific radio frequencies or numbers in cases of persistent or serious violations. The NCEC's decisions may be appealed before the administrative courts. Criminal liability for unlawful interception of communications shall be governed by the Criminal Code of Ukraine."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "електронна комунікаційна послуга (electronic communications service)",
+      "definition": "A service normally provided for remuneration via electronic communications networks which encompasses interpersonal communications services and internet access services, excluding broadcasting services.",
+      "source_provision": "art2"
+    },
+    {
+      "term": "постачальник (provider)",
+      "definition": "A legal entity or natural person — entrepreneur providing electronic communications services or operating electronic communications networks.",
+      "source_provision": "art2"
+    },
+    {
+      "term": "кінцевий користувач (end-user)",
+      "definition": "A person using or requesting publicly available electronic communications services, not being a provider of electronic communications networks or services.",
+      "source_provision": "art2"
+    }
+  ]
+}
