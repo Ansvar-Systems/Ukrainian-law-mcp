@@ -1,25 +1,33 @@
 /**
  * Golden contract tests for Ukrainian Law MCP.
  * Validates core tool functionality against seed data.
+ *
+ * Skipped in CI when database.db is not present (e.g. npm-only installs).
  */
 
 import { describe, it, expect, beforeAll } from 'vitest';
 import Database from 'better-sqlite3';
 import * as path from 'path';
+import * as fs from 'fs';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const DB_PATH = path.resolve(__dirname, '../../data/database.db');
 
+const DB_EXISTS = fs.existsSync(DB_PATH);
+
+const describeIfDb = DB_EXISTS ? describe : describe.skip;
+
 let db: InstanceType<typeof Database>;
 
 beforeAll(() => {
+  if (!DB_EXISTS) return;
   db = new Database(DB_PATH, { readonly: true });
   db.pragma('journal_mode = DELETE');
 });
 
-describe('Database integrity', () => {
+describeIfDb('Database integrity', () => {
   it('should have at least 10 legal documents', () => {
     const row = db.prepare(
       'SELECT COUNT(*) as cnt FROM legal_documents'
@@ -40,7 +48,7 @@ describe('Database integrity', () => {
   });
 });
 
-describe('Article retrieval', () => {
+describeIfDb('Article retrieval', () => {
   it('should retrieve a provision by document_id and section', () => {
     const row = db.prepare(
       "SELECT content FROM legal_provisions WHERE document_id = 'ua-access-public-information' AND section = '1'"
@@ -50,7 +58,7 @@ describe('Article retrieval', () => {
   });
 });
 
-describe('Search', () => {
+describeIfDb('Search', () => {
   it('should find results via FTS search', () => {
     const rows = db.prepare(
       "SELECT COUNT(*) as cnt FROM provisions_fts WHERE provisions_fts MATCH 'персональних'"
@@ -59,7 +67,7 @@ describe('Search', () => {
   });
 });
 
-describe('EU cross-references', () => {
+describeIfDb('EU cross-references', () => {
   it('should query EU document references table', () => {
     const row = db.prepare('SELECT COUNT(*) as cnt FROM eu_documents').get() as { cnt: number };
     expect(row.cnt).toBeGreaterThanOrEqual(0);
@@ -73,7 +81,7 @@ describe('EU cross-references', () => {
   });
 });
 
-describe('Negative tests', () => {
+describeIfDb('Negative tests', () => {
   it('should return no results for fictional document', () => {
     const row = db.prepare(
       "SELECT COUNT(*) as cnt FROM legal_provisions WHERE document_id = 'fictional-law-2099'"
@@ -89,7 +97,7 @@ describe('Negative tests', () => {
   });
 });
 
-describe('All 10 laws are present', () => {
+describeIfDb('All 10 laws are present', () => {
   const expectedDocs = [
     'ua-access-public-information',
     'ua-competition-trade-secrets',
@@ -114,7 +122,7 @@ describe('All 10 laws are present', () => {
   }
 });
 
-describe('Provision coverage by law', () => {
+describeIfDb('Provision coverage by law', () => {
   const minimumCounts: Record<string, number> = {
     'ua-personal-data-protection': 1,
     'ua-cybersecurity': 1,
@@ -138,7 +146,7 @@ describe('Provision coverage by law', () => {
   }
 });
 
-describe('list_sources', () => {
+describeIfDb('list_sources', () => {
   it('should have db_metadata table', () => {
     const row = db.prepare('SELECT COUNT(*) as cnt FROM db_metadata').get() as { cnt: number };
     expect(row.cnt).toBeGreaterThan(0);
