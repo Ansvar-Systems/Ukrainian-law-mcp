@@ -1,0 +1,20 @@
+{
+  "id": "ua-law-839-18",
+  "type": "statute",
+  "title": "Закон України (839-18)",
+  "title_en": "",
+  "short_name": "839-18",
+  "status": "in_force",
+  "issued_date": "2014-02-28",
+  "url": "https://zakon.rada.gov.ua/laws/show/839-18",
+  "description": "Official legislative act of Ukraine ingested from the Verkhovna Rada legal portal.",
+  "provisions": [
+    {
+      "provision_ref": "art6",
+      "section": "6",
+      "title": "Стаття 6. Цей Закон набирає чинності з дня його опублікування.",
+      "content": "Виконуючий обов'язки\n\nПрезидента України,\n\nГолова Верховної Ради\n\nУкраїни\nО.ТУРЧИНОВ"
+    }
+  ],
+  "definitions": []
+}

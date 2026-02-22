@@ -15,6 +15,10 @@ export interface TargetLaw {
   articleFilter?: string[];
 }
 
+export interface ParseOptions {
+  extractDefinitions?: boolean;
+}
+
 export interface ParsedProvision {
   provision_ref: string;
   chapter?: string;
@@ -165,12 +169,12 @@ function extractStatus(html: string): DocumentStatus {
 }
 
 function extractArticleArea(html: string): string {
-  const start = html.indexOf('<div id="article">');
-  if (start < 0) {
+  const articleContainer = /<div[^>]*\bid\s*=\s*(?:"article"|'article'|article)(?=[\s>])[^>]*>/i.exec(html);
+  if (!articleContainer || articleContainer.index < 0) {
     throw new Error('Could not find article body in /print HTML');
   }
 
-  let area = html.slice(start);
+  let area = html.slice(articleContainer.index);
   const markers = [
     '<h2 class=hdr1>Публікації документа',
     '<h2 class=hdr1>Publications of the document',
@@ -279,13 +283,14 @@ export function parseLawPrintHtml(
   law: TargetLaw,
   titleEn?: string,
   statusHtml?: string,
+  options?: ParseOptions,
 ): ParsedAct {
   const title = resolveTitle(extractPageTitle(printHtml), law.titleUkFallback);
   const issuedDate = extractIssuedDate(printHtml);
   const status = extractStatus(statusHtml ?? printHtml);
   const articleArea = extractArticleArea(printHtml);
 
-  const paragraphRegex = /<p\b[^>]*>([\s\S]*?)<\/p>/gi;
+  const paragraphRegex = /<(?:p|pre)\b[^>]*>([\s\S]*?)<\/(?:p|pre)>/gi;
   const articles: ParsedProvision[] = [];
   let current: WorkingArticle | null = null;
   let match: RegExpExecArray | null;
@@ -344,11 +349,26 @@ export function parseLawPrintHtml(
     if (provision) articles.push(provision);
   }
 
+  if (articles.length === 0) {
+    const fullBody = normalizeWhitespace(htmlToText(articleArea));
+    if (fullBody) {
+      articles.push({
+        provision_ref: 'art0',
+        section: '0',
+        title: 'Стаття 0. Текст документа',
+        content: fullBody,
+      });
+    }
+  }
+
   const filteredProvisions = law.articleFilter
     ? articles.filter(p => law.articleFilter!.includes(p.section))
     : articles;
 
-  const definitions = extractDefinitions(filteredProvisions);
+  const definitions =
+    options?.extractDefinitions === false
+      ? []
+      : extractDefinitions(filteredProvisions);
   const titleEnResolved = titleEn?.trim() || law.titleEnFallback;
 
   return {
@@ -363,6 +383,69 @@ export function parseLawPrintHtml(
     description: law.description,
     provisions: filteredProvisions,
     definitions,
+  };
+}
+
+export function slugFromReference(reference: string): string {
+  const decoded = safeDecodeURIComponent(reference);
+  return decoded
+    .toLowerCase()
+    .replace(/[\/\s]+/g, '-')
+    .replace(/[^a-z0-9\-]/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+function safeDecodeURIComponent(value: string): string {
+  try {
+    return decodeURIComponent(value);
+  } catch {
+    return value;
+  }
+}
+
+function normalizeReference(reference: string): string {
+  return safeDecodeURIComponent(reference)
+    .normalize('NFC')
+    .replace(/\s+/g, '')
+    .replace(/[‐‑‒–—]/g, '-')
+    .toLowerCase();
+}
+
+const CURATED_BY_REFERENCE = new Map<string, TargetLaw>();
+
+export function resolveKnownLawByReference(reference: string): TargetLaw | undefined {
+  if (CURATED_BY_REFERENCE.size === 0) {
+    for (const law of TARGET_LAWS) {
+      CURATED_BY_REFERENCE.set(normalizeReference(law.reference), law);
+    }
+  }
+  return CURATED_BY_REFERENCE.get(normalizeReference(reference));
+}
+
+export function buildGenericTargetLaw(reference: string, order: string): TargetLaw {
+  const known = resolveKnownLawByReference(reference);
+  if (known) {
+    return {
+      ...known,
+      order,
+      articleFilter: undefined,
+    };
+  }
+
+  const slug = slugFromReference(reference);
+
+  const decodedReference = safeDecodeURIComponent(reference);
+
+  return {
+    order,
+    id: `ua-law-${slug}`,
+    reference,
+    titleUkFallback: `Закон України (${decodedReference})`,
+    shortName: decodedReference,
+    titleEnFallback: '',
+    description:
+      'Official legislative act of Ukraine ingested from the Verkhovna Rada legal portal.',
   };
 }
 

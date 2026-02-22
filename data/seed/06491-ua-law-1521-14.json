@@ -1,0 +1,20 @@
+{
+  "id": "ua-law-1521-14",
+  "type": "statute",
+  "title": "Закон України (1521-14)",
+  "title_en": "",
+  "short_name": "1521-14",
+  "status": "in_force",
+  "issued_date": "2000-03-02",
+  "url": "https://zakon.rada.gov.ua/laws/show/1521-14",
+  "description": "Official legislative act of Ukraine ingested from the Verkhovna Rada legal portal.",
+  "provisions": [
+    {
+      "provision_ref": "art5",
+      "section": "5",
+      "title": "Стаття 5. Прикінцеві положення",
+      "content": "1. Цей Закон набирає чинності з дня його опублікування.\n2. Кабінету Міністрів України розробити порядок обліку та\nзвітності операцій, що здійснюються відповідно до цього Закону."
+    }
+  ],
+  "definitions": []
+}

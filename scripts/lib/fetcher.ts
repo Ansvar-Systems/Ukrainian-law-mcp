@@ -12,7 +12,10 @@
 
 const USER_AGENT =
   'Ansvar-Law-MCP/1.0 (+https://github.com/Ansvar-Systems/Ukrainian-law-mcp)';
-const MIN_DELAY_MS = 1200;
+const parsedDelay = Number.parseInt(process.env.MCP_FETCH_DELAY_MS ?? '', 10);
+const MIN_DELAY_MS = Number.isFinite(parsedDelay) && parsedDelay >= 1000 && parsedDelay <= 5000
+  ? parsedDelay
+  : 1200;
 
 let lastRequestTime = 0;
 

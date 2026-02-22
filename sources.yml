@@ -13,8 +13,8 @@ sources:
       url: "https://zakon.rada.gov.ua/laws/main/index"
       summary: "Official legislative texts are published by the Parliament of Ukraine and are publicly accessible."
     coverage:
-      scope: "Current statutes and codes published in the Verkhovna Rada legal portal, including the 10 cyber/data-focused laws in this MCP."
-      limitations: "This MCP currently ingests a selected subset of laws, not the full corpus."
+      scope: "Full corpus ingestion from the Verkhovna Rada legal portal type lists: Constitution (t216), Codes of Ukraine (t21), Codes (t124), and Laws of Ukraine (t1)."
+      limitations: "Records are skipped when the official print page is unavailable, inaccessible, or cannot be parsed; such cases are logged during ingestion."
     languages:
       - "uk"
       - "en"

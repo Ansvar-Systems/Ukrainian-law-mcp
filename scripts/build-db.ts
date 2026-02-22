@@ -301,6 +301,8 @@ function extractEuReferences(text: string): ExtractedEUReference[] {
   return refs;
 }
 
+const ENABLE_EU_EXTRACT = process.env.ENABLE_EU_EXTRACT === '1';
+
 function buildDatabase(): void {
   console.log('Building Ukrainian Law MCP database...\n');
 
@@ -396,7 +398,7 @@ function buildDatabase(): void {
           totalProvisions++;
 
           const provisionId = Number(insertResult.lastInsertRowid);
-          const extractedRefs = extractEuReferences(prov.content);
+          const extractedRefs = ENABLE_EU_EXTRACT ? extractEuReferences(prov.content) : [];
           if (extractedRefs.length > 0) {
             const sourceId = `${seed.id}:${prov.provision_ref}`;
             const lastVerified = new Date().toISOString();

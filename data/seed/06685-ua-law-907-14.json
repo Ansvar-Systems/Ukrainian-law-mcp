@@ -1,0 +1,20 @@
+{
+  "id": "ua-law-907-14",
+  "type": "statute",
+  "title": "Закон України (907-14)",
+  "title_en": "",
+  "short_name": "907-14",
+  "status": "in_force",
+  "issued_date": "1999-07-13",
+  "url": "https://zakon.rada.gov.ua/laws/show/907-14",
+  "description": "Official legislative act of Ukraine ingested from the Verkhovna Rada legal portal.",
+  "provisions": [
+    {
+      "provision_ref": "art5",
+      "section": "5",
+      "title": "Стаття 5. Прикінцеві положення",
+      "content": "Цей Закон набирає чинності з дня його опублікування.\nЗакони та інші нормативно-правові акти діють у частині, що не\nсуперечить цьому Закону.\nКабінету Міністрів України визначити у десятиденний строк\nпорядок ввезення олії в Україну відповідно до цього Закону, а\nтакож механізм контролю за її використанням."
+    }
+  ],
+  "definitions": []
+}

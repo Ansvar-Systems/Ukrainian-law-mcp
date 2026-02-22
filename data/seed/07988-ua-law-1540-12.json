@@ -1,0 +1,20 @@
+{
+  "id": "ua-law-1540-12",
+  "type": "statute",
+  "title": "Закон України (1540-12)",
+  "title_en": "",
+  "short_name": "1540-12",
+  "status": "in_force",
+  "issued_date": "1991-09-10",
+  "url": "https://zakon.rada.gov.ua/laws/show/1540-12",
+  "description": "Official legislative act of Ukraine ingested from the Verkhovna Rada legal portal.",
+  "provisions": [
+    {
+      "provision_ref": "art10",
+      "section": "10",
+      "title": "Стаття 10. Закон набирає чинності з дня прийняття.",
+      "content": "Голова Верховної Ради України Л.КРАВЧУК\n\nм. Київ, 10 вересня 1991 року\nN 1540-XII"
+    }
+  ],
+  "definitions": []
+}

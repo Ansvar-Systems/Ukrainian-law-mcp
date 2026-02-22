@@ -1,0 +1,20 @@
+{
+  "id": "ua-law-774-97",
+  "type": "statute",
+  "title": "Закон України (774/97-ВР)",
+  "title_en": "",
+  "short_name": "774/97-ВР",
+  "status": "in_force",
+  "issued_date": "1997-12-23",
+  "url": "https://zakon.rada.gov.ua/laws/show/774/97-ВР",
+  "description": "Official legislative act of Ukraine ingested from the Verkhovna Rada legal portal.",
+  "provisions": [
+    {
+      "provision_ref": "art2",
+      "section": "2",
+      "title": "Стаття 2. Цей Закон набирає чинності з дня його опублікування.",
+      "content": "Л.КУЧМА"
+    }
+  ],
+  "definitions": []
+}
