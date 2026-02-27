@@ -1,0 +1,95 @@
+2026-02-21T22:45:59+01:00 watcher started
+2026-02-22T02:37:00+01:00 ingestion complete detected
+
+> @ansvar/ukrainian-law-mcp@1.0.0 build:db
+> node --import tsx scripts/build-db.ts
+
+Building Ukrainian Law MCP database...
+
+  Deleted existing database.
+
+
+Build complete: 8165 documents, 50710 provisions, 0 definitions, 0 EU documents, 0 EU references
+Output: /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/database.db (400.5 MB)
+
+> @ansvar/ukrainian-law-mcp@1.0.0 build
+> tsc
+
+
+> @ansvar/ukrainian-law-mcp@1.0.0 test
+> vitest run
+
+
+ RUN  v3.2.4 /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp
+
+ ❯ __tests__/contract/golden.test.ts (30 tests | 4 failed) 10ms
+   ✓ Database integrity > should have at least 10 legal documents 1ms
+   ✓ Database integrity > should have at least 112 provisions 0ms
+   ✓ Database integrity > should have FTS index 0ms
+   ✓ Article retrieval > should retrieve a provision by document_id and section 0ms
+   ✓ Search > should find results via FTS search 0ms
+   ✓ EU cross-references > should query EU document references table 0ms
+   ✓ EU cross-references > should query EU reference links table 0ms
+   ✓ Negative tests > should return no results for fictional document 0ms
+   ✓ Negative tests > should return no results for invalid section 0ms
+   ✓ All 10 laws are present > should contain document: ua-access-public-information 0ms
+   × All 10 laws are present > should contain document: ua-competition-trade-secrets 2ms
+     → expected undefined to be defined
+   ✓ All 10 laws are present > should contain document: ua-criminal-code-cybercrime 0ms
+   ✓ All 10 laws are present > should contain document: ua-critical-infrastructure 0ms
+   ✓ All 10 laws are present > should contain document: ua-cybersecurity 0ms
+   ✓ All 10 laws are present > should contain document: ua-electronic-commerce 0ms
+   ✓ All 10 laws are present > should contain document: ua-electronic-communications 0ms
+   ✓ All 10 laws are present > should contain document: ua-electronic-trust-services 0ms
+   × All 10 laws are present > should contain document: ua-information-protection-systems 0ms
+     → expected undefined to be defined
+   ✓ All 10 laws are present > should contain document: ua-personal-data-protection 0ms
+   ✓ Provision coverage by law > should keep non-empty provision coverage for ua-personal-data-protection 0ms
+   ✓ Provision coverage by law > should keep non-empty provision coverage for ua-cybersecurity 0ms
+   ✓ Provision coverage by law > should keep non-empty provision coverage for ua-electronic-communications 0ms
+   ✓ Provision coverage by law > should keep non-empty provision coverage for ua-electronic-commerce 0ms
+   ✓ Provision coverage by law > should keep non-empty provision coverage for ua-electronic-trust-services 0ms
+   ✓ Provision coverage by law > should keep non-empty provision coverage for ua-access-public-information 0ms
+   ✓ Provision coverage by law > should keep non-empty provision coverage for ua-criminal-code-cybercrime 0ms
+   ✓ Provision coverage by law > should keep non-empty provision coverage for ua-critical-infrastructure 0ms
+   × Provision coverage by law > should keep non-empty provision coverage for ua-information-protection-systems 0ms
+     → expected 0 to be greater than or equal to 1
+   × Provision coverage by law > should keep non-empty provision coverage for ua-competition-trade-secrets 0ms
+     → expected 0 to be greater than or equal to 1
+   ✓ list_sources > should have db_metadata table 0ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  __tests__/contract/golden.test.ts > All 10 laws are present > should contain document: ua-competition-trade-secrets
+ FAIL  __tests__/contract/golden.test.ts > All 10 laws are present > should contain document: ua-information-protection-systems
+AssertionError: expected undefined to be defined
+ ❯ __tests__/contract/golden.test.ts:111:19
+    109|         'SELECT id FROM legal_documents WHERE id = ?'
+    110|       ).get(docId) as { id: string } | undefined;
+    111|       expect(row).toBeDefined();
+       |                   ^
+    112|       expect(row!.id).toBe(docId);
+    113|     });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  __tests__/contract/golden.test.ts > Provision coverage by law > should keep non-empty provision coverage for ua-information-protection-systems
+ FAIL  __tests__/contract/golden.test.ts > Provision coverage by law > should keep non-empty provision coverage for ua-competition-trade-secrets
+AssertionError: expected 0 to be greater than or equal to 1
+ ❯ __tests__/contract/golden.test.ts:136:23
+    134|         'SELECT COUNT(*) as cnt FROM legal_provisions WHERE document_i…
+    135|       ).get(docId) as { cnt: number };
+    136|       expect(row.cnt).toBeGreaterThanOrEqual(minimum);
+       |                       ^
+    137|     });
+    138|   }
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  4 failed | 26 passed (30)
+   Start at  02:37:13
+   Duration  141ms (transform 21ms, setup 0ms, collect 23ms, tests 10ms, environment 0ms, prepare 26ms)
+
+2026-02-22T02:37:14+01:00 test failed

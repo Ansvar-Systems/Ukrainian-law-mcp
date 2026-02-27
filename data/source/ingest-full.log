@@ -1,0 +1,4 @@
+
+> @ansvar/ukrainian-law-mcp@1.0.0 ingest
+> node --import tsx scripts/ingest.ts --full --resume
+

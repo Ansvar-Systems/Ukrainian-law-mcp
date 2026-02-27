@@ -1,0 +1,1704 @@
+2026-02-21T22:44:30+01:00 start current=1282 total=8165 step=300
+2026-02-21T22:44:30+01:00 target limit 1582 (current 1282)
+2026-02-21T22:44:30+01:00 attempt 1 limit 1582
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=1582
+types=216,21,124,1
+
+[100/1582] resume-skip=100 processed=0 failed=0
+[200/1582] resume-skip=200 processed=0 failed=0
+[300/1582] resume-skip=300 processed=0 failed=0
+[400/1582] resume-skip=400 processed=0 failed=0
+[500/1582] resume-skip=500 processed=0 failed=0
+[600/1582] resume-skip=600 processed=0 failed=0
+[700/1582] resume-skip=700 processed=0 failed=0
+[800/1582] resume-skip=800 processed=0 failed=0
+[900/1582] resume-skip=900 processed=0 failed=0
+[1000/1582] resume-skip=1000 processed=0 failed=0
+[1100/1582] resume-skip=1100 processed=0 failed=0
+[1200/1582] resume-skip=1200 processed=0 failed=0
+[1300/1582] processed=18 skipped=1282 failed=0 provisions=55
+[1350/1582] processed=68 skipped=1282 failed=0 provisions=210
+[1400/1582] processed=118 skipped=1282 failed=0 provisions=304
+[1450/1582] processed=168 skipped=1282 failed=0 provisions=832
+[1500/1582] processed=218 skipped=1282 failed=0 provisions=1005
+[1550/1582] processed=268 skipped=1282 failed=0 provisions=1215
+[1582/1582] processed=300 skipped=1282 failed=0 provisions=1560
+
+Ingestion Summary
+-----------------
+Total selected: 1582
+Processed:      300
+Skipped:        1282
+Failed:         0
+Provisions:     1560
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-21T22:54:30+01:00 chunk complete files=1582
+2026-02-21T22:54:30+01:00 target limit 1882 (current 1582)
+2026-02-21T22:54:30+01:00 attempt 1 limit 1882
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=1882
+types=216,21,124,1
+
+[100/1882] resume-skip=100 processed=0 failed=0
+[200/1882] resume-skip=200 processed=0 failed=0
+[300/1882] resume-skip=300 processed=0 failed=0
+[400/1882] resume-skip=400 processed=0 failed=0
+[500/1882] resume-skip=500 processed=0 failed=0
+[600/1882] resume-skip=600 processed=0 failed=0
+[700/1882] resume-skip=700 processed=0 failed=0
+[800/1882] resume-skip=800 processed=0 failed=0
+[900/1882] resume-skip=900 processed=0 failed=0
+[1000/1882] resume-skip=1000 processed=0 failed=0
+[1100/1882] resume-skip=1100 processed=0 failed=0
+[1200/1882] resume-skip=1200 processed=0 failed=0
+[1300/1882] resume-skip=1300 processed=0 failed=0
+[1400/1882] resume-skip=1400 processed=0 failed=0
+[1500/1882] resume-skip=1500 processed=0 failed=0
+[1600/1882] processed=18 skipped=1582 failed=0 provisions=34
+[1650/1882] processed=68 skipped=1582 failed=0 provisions=101
+[1700/1882] processed=118 skipped=1582 failed=0 provisions=289
+[1750/1882] processed=168 skipped=1582 failed=0 provisions=432
+[1800/1882] processed=218 skipped=1582 failed=0 provisions=650
+[1850/1882] processed=268 skipped=1582 failed=0 provisions=1011
+[1882/1882] processed=300 skipped=1582 failed=0 provisions=1074
+
+Ingestion Summary
+-----------------
+Total selected: 1882
+Processed:      300
+Skipped:        1582
+Failed:         0
+Provisions:     1074
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-21T23:04:36+01:00 chunk complete files=1882
+2026-02-21T23:04:36+01:00 target limit 2182 (current 1882)
+2026-02-21T23:04:36+01:00 attempt 1 limit 2182
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=2182
+types=216,21,124,1
+
+[100/2182] resume-skip=100 processed=0 failed=0
+[200/2182] resume-skip=200 processed=0 failed=0
+[300/2182] resume-skip=300 processed=0 failed=0
+[400/2182] resume-skip=400 processed=0 failed=0
+[500/2182] resume-skip=500 processed=0 failed=0
+[600/2182] resume-skip=600 processed=0 failed=0
+[700/2182] resume-skip=700 processed=0 failed=0
+[800/2182] resume-skip=800 processed=0 failed=0
+[900/2182] resume-skip=900 processed=0 failed=0
+[1000/2182] resume-skip=1000 processed=0 failed=0
+[1100/2182] resume-skip=1100 processed=0 failed=0
+[1200/2182] resume-skip=1200 processed=0 failed=0
+[1300/2182] resume-skip=1300 processed=0 failed=0
+[1400/2182] resume-skip=1400 processed=0 failed=0
+[1500/2182] resume-skip=1500 processed=0 failed=0
+[1600/2182] resume-skip=1600 processed=0 failed=0
+[1700/2182] resume-skip=1700 processed=0 failed=0
+[1800/2182] resume-skip=1800 processed=0 failed=0
+[1900/2182] processed=18 skipped=1882 failed=0 provisions=33
+[1950/2182] processed=68 skipped=1882 failed=0 provisions=318
+[2000/2182] processed=118 skipped=1882 failed=0 provisions=543
+[2050/2182] processed=168 skipped=1882 failed=0 provisions=919
+[2100/2182] processed=218 skipped=1882 failed=0 provisions=2594
+[2150/2182] processed=268 skipped=1882 failed=0 provisions=2773
+[2182/2182] processed=300 skipped=1882 failed=0 provisions=2863
+
+Ingestion Summary
+-----------------
+Total selected: 2182
+Processed:      300
+Skipped:        1882
+Failed:         0
+Provisions:     2863
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-21T23:14:35+01:00 chunk complete files=2182
+2026-02-21T23:14:35+01:00 target limit 2482 (current 2182)
+2026-02-21T23:14:35+01:00 attempt 1 limit 2482
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=2482
+types=216,21,124,1
+
+[100/2482] resume-skip=100 processed=0 failed=0
+[200/2482] resume-skip=200 processed=0 failed=0
+[300/2482] resume-skip=300 processed=0 failed=0
+[400/2482] resume-skip=400 processed=0 failed=0
+[500/2482] resume-skip=500 processed=0 failed=0
+[600/2482] resume-skip=600 processed=0 failed=0
+[700/2482] resume-skip=700 processed=0 failed=0
+[800/2482] resume-skip=800 processed=0 failed=0
+[900/2482] resume-skip=900 processed=0 failed=0
+[1000/2482] resume-skip=1000 processed=0 failed=0
+[1100/2482] resume-skip=1100 processed=0 failed=0
+[1200/2482] resume-skip=1200 processed=0 failed=0
+[1300/2482] resume-skip=1300 processed=0 failed=0
+[1400/2482] resume-skip=1400 processed=0 failed=0
+[1500/2482] resume-skip=1500 processed=0 failed=0
+[1600/2482] resume-skip=1600 processed=0 failed=0
+[1700/2482] resume-skip=1700 processed=0 failed=0
+[1800/2482] resume-skip=1800 processed=0 failed=0
+[1900/2482] resume-skip=1900 processed=0 failed=0
+[2000/2482] resume-skip=2000 processed=0 failed=0
+[2100/2482] resume-skip=2100 processed=0 failed=0
+[2200/2482] processed=18 skipped=2182 failed=0 provisions=127
+[2250/2482] processed=68 skipped=2182 failed=0 provisions=238
+[2300/2482] processed=118 skipped=2182 failed=0 provisions=358
+[2350/2482] processed=168 skipped=2182 failed=0 provisions=737
+[2400/2482] processed=218 skipped=2182 failed=0 provisions=866
+[2450/2482] processed=268 skipped=2182 failed=0 provisions=1244
+[2482/2482] processed=300 skipped=2182 failed=0 provisions=1359
+
+Ingestion Summary
+-----------------
+Total selected: 2482
+Processed:      300
+Skipped:        2182
+Failed:         0
+Provisions:     1359
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-21T23:24:37+01:00 chunk complete files=2482
+2026-02-21T23:24:37+01:00 target limit 2782 (current 2482)
+2026-02-21T23:24:37+01:00 attempt 1 limit 2782
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=2782
+types=216,21,124,1
+
+[100/2782] resume-skip=100 processed=0 failed=0
+[200/2782] resume-skip=200 processed=0 failed=0
+[300/2782] resume-skip=300 processed=0 failed=0
+[400/2782] resume-skip=400 processed=0 failed=0
+[500/2782] resume-skip=500 processed=0 failed=0
+[600/2782] resume-skip=600 processed=0 failed=0
+[700/2782] resume-skip=700 processed=0 failed=0
+[800/2782] resume-skip=800 processed=0 failed=0
+[900/2782] resume-skip=900 processed=0 failed=0
+[1000/2782] resume-skip=1000 processed=0 failed=0
+[1100/2782] resume-skip=1100 processed=0 failed=0
+[1200/2782] resume-skip=1200 processed=0 failed=0
+[1300/2782] resume-skip=1300 processed=0 failed=0
+[1400/2782] resume-skip=1400 processed=0 failed=0
+[1500/2782] resume-skip=1500 processed=0 failed=0
+[1600/2782] resume-skip=1600 processed=0 failed=0
+[1700/2782] resume-skip=1700 processed=0 failed=0
+[1800/2782] resume-skip=1800 processed=0 failed=0
+[1900/2782] resume-skip=1900 processed=0 failed=0
+[2000/2782] resume-skip=2000 processed=0 failed=0
+[2100/2782] resume-skip=2100 processed=0 failed=0
+[2200/2782] resume-skip=2200 processed=0 failed=0
+[2300/2782] resume-skip=2300 processed=0 failed=0
+[2400/2782] resume-skip=2400 processed=0 failed=0
+[2500/2782] processed=18 skipped=2482 failed=0 provisions=19
+[2550/2782] processed=68 skipped=2482 failed=0 provisions=303
+[2600/2782] processed=118 skipped=2482 failed=0 provisions=398
+[2650/2782] processed=168 skipped=2482 failed=0 provisions=602
+[2700/2782] processed=218 skipped=2482 failed=0 provisions=699
+[2750/2782] processed=268 skipped=2482 failed=0 provisions=1179
+[2782/2782] processed=300 skipped=2482 failed=0 provisions=1527
+
+Ingestion Summary
+-----------------
+Total selected: 2782
+Processed:      300
+Skipped:        2482
+Failed:         0
+Provisions:     1527
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-21T23:34:36+01:00 chunk complete files=2782
+2026-02-21T23:34:36+01:00 target limit 3082 (current 2782)
+2026-02-21T23:34:36+01:00 attempt 1 limit 3082
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=3082
+types=216,21,124,1
+
+[100/3082] resume-skip=100 processed=0 failed=0
+[200/3082] resume-skip=200 processed=0 failed=0
+[300/3082] resume-skip=300 processed=0 failed=0
+[400/3082] resume-skip=400 processed=0 failed=0
+[500/3082] resume-skip=500 processed=0 failed=0
+[600/3082] resume-skip=600 processed=0 failed=0
+[700/3082] resume-skip=700 processed=0 failed=0
+[800/3082] resume-skip=800 processed=0 failed=0
+[900/3082] resume-skip=900 processed=0 failed=0
+[1000/3082] resume-skip=1000 processed=0 failed=0
+[1100/3082] resume-skip=1100 processed=0 failed=0
+[1200/3082] resume-skip=1200 processed=0 failed=0
+[1300/3082] resume-skip=1300 processed=0 failed=0
+[1400/3082] resume-skip=1400 processed=0 failed=0
+[1500/3082] resume-skip=1500 processed=0 failed=0
+[1600/3082] resume-skip=1600 processed=0 failed=0
+[1700/3082] resume-skip=1700 processed=0 failed=0
+[1800/3082] resume-skip=1800 processed=0 failed=0
+[1900/3082] resume-skip=1900 processed=0 failed=0
+[2000/3082] resume-skip=2000 processed=0 failed=0
+[2100/3082] resume-skip=2100 processed=0 failed=0
+[2200/3082] resume-skip=2200 processed=0 failed=0
+[2300/3082] resume-skip=2300 processed=0 failed=0
+[2400/3082] resume-skip=2400 processed=0 failed=0
+[2500/3082] resume-skip=2500 processed=0 failed=0
+[2600/3082] resume-skip=2600 processed=0 failed=0
+[2700/3082] resume-skip=2700 processed=0 failed=0
+[2800/3082] processed=18 skipped=2782 failed=0 provisions=55
+[2850/3082] processed=68 skipped=2782 failed=0 provisions=302
+[2900/3082] processed=118 skipped=2782 failed=0 provisions=446
+[2950/3082] processed=168 skipped=2782 failed=0 provisions=683
+[3000/3082] processed=218 skipped=2782 failed=0 provisions=806
+[3050/3082] processed=268 skipped=2782 failed=0 provisions=915
+[3082/3082] processed=300 skipped=2782 failed=0 provisions=952
+
+Ingestion Summary
+-----------------
+Total selected: 3082
+Processed:      300
+Skipped:        2782
+Failed:         0
+Provisions:     952
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-21T23:44:40+01:00 chunk complete files=3082
+2026-02-21T23:44:40+01:00 target limit 3382 (current 3082)
+2026-02-21T23:44:40+01:00 attempt 1 limit 3382
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=3382
+types=216,21,124,1
+
+[100/3382] resume-skip=100 processed=0 failed=0
+[200/3382] resume-skip=200 processed=0 failed=0
+[300/3382] resume-skip=300 processed=0 failed=0
+[400/3382] resume-skip=400 processed=0 failed=0
+[500/3382] resume-skip=500 processed=0 failed=0
+[600/3382] resume-skip=600 processed=0 failed=0
+[700/3382] resume-skip=700 processed=0 failed=0
+[800/3382] resume-skip=800 processed=0 failed=0
+[900/3382] resume-skip=900 processed=0 failed=0
+[1000/3382] resume-skip=1000 processed=0 failed=0
+[1100/3382] resume-skip=1100 processed=0 failed=0
+[1200/3382] resume-skip=1200 processed=0 failed=0
+[1300/3382] resume-skip=1300 processed=0 failed=0
+[1400/3382] resume-skip=1400 processed=0 failed=0
+[1500/3382] resume-skip=1500 processed=0 failed=0
+[1600/3382] resume-skip=1600 processed=0 failed=0
+[1700/3382] resume-skip=1700 processed=0 failed=0
+[1800/3382] resume-skip=1800 processed=0 failed=0
+[1900/3382] resume-skip=1900 processed=0 failed=0
+[2000/3382] resume-skip=2000 processed=0 failed=0
+[2100/3382] resume-skip=2100 processed=0 failed=0
+[2200/3382] resume-skip=2200 processed=0 failed=0
+[2300/3382] resume-skip=2300 processed=0 failed=0
+[2400/3382] resume-skip=2400 processed=0 failed=0
+[2500/3382] resume-skip=2500 processed=0 failed=0
+[2600/3382] resume-skip=2600 processed=0 failed=0
+[2700/3382] resume-skip=2700 processed=0 failed=0
+[2800/3382] resume-skip=2800 processed=0 failed=0
+[2900/3382] resume-skip=2900 processed=0 failed=0
+[3000/3382] resume-skip=3000 processed=0 failed=0
+[3100/3382] processed=18 skipped=3082 failed=0 provisions=26
+[3150/3382] processed=68 skipped=3082 failed=0 provisions=278
+[3200/3382] processed=118 skipped=3082 failed=0 provisions=382
+[3250/3382] processed=168 skipped=3082 failed=0 provisions=491
+[3300/3382] processed=218 skipped=3082 failed=0 provisions=913
+[3350/3382] processed=268 skipped=3082 failed=0 provisions=1109
+[3382/3382] processed=300 skipped=3082 failed=0 provisions=1172
+
+Ingestion Summary
+-----------------
+Total selected: 3382
+Processed:      300
+Skipped:        3082
+Failed:         0
+Provisions:     1172
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-21T23:54:42+01:00 chunk complete files=3382
+2026-02-21T23:54:42+01:00 target limit 3682 (current 3382)
+2026-02-21T23:54:42+01:00 attempt 1 limit 3682
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=3682
+types=216,21,124,1
+
+[100/3682] resume-skip=100 processed=0 failed=0
+[200/3682] resume-skip=200 processed=0 failed=0
+[300/3682] resume-skip=300 processed=0 failed=0
+[400/3682] resume-skip=400 processed=0 failed=0
+[500/3682] resume-skip=500 processed=0 failed=0
+[600/3682] resume-skip=600 processed=0 failed=0
+[700/3682] resume-skip=700 processed=0 failed=0
+[800/3682] resume-skip=800 processed=0 failed=0
+[900/3682] resume-skip=900 processed=0 failed=0
+[1000/3682] resume-skip=1000 processed=0 failed=0
+[1100/3682] resume-skip=1100 processed=0 failed=0
+[1200/3682] resume-skip=1200 processed=0 failed=0
+[1300/3682] resume-skip=1300 processed=0 failed=0
+[1400/3682] resume-skip=1400 processed=0 failed=0
+[1500/3682] resume-skip=1500 processed=0 failed=0
+[1600/3682] resume-skip=1600 processed=0 failed=0
+[1700/3682] resume-skip=1700 processed=0 failed=0
+[1800/3682] resume-skip=1800 processed=0 failed=0
+[1900/3682] resume-skip=1900 processed=0 failed=0
+[2000/3682] resume-skip=2000 processed=0 failed=0
+[2100/3682] resume-skip=2100 processed=0 failed=0
+[2200/3682] resume-skip=2200 processed=0 failed=0
+[2300/3682] resume-skip=2300 processed=0 failed=0
+[2400/3682] resume-skip=2400 processed=0 failed=0
+[2500/3682] resume-skip=2500 processed=0 failed=0
+[2600/3682] resume-skip=2600 processed=0 failed=0
+[2700/3682] resume-skip=2700 processed=0 failed=0
+[2800/3682] resume-skip=2800 processed=0 failed=0
+[2900/3682] resume-skip=2900 processed=0 failed=0
+[3000/3682] resume-skip=3000 processed=0 failed=0
+[3100/3682] resume-skip=3100 processed=0 failed=0
+[3200/3682] resume-skip=3200 processed=0 failed=0
+[3300/3682] resume-skip=3300 processed=0 failed=0
+[3400/3682] processed=18 skipped=3382 failed=0 provisions=84
+[3450/3682] processed=68 skipped=3382 failed=0 provisions=324
+[3500/3682] processed=118 skipped=3382 failed=0 provisions=549
+[3550/3682] processed=168 skipped=3382 failed=0 provisions=634
+[3600/3682] processed=218 skipped=3382 failed=0 provisions=866
+[3650/3682] processed=268 skipped=3382 failed=0 provisions=1164
+[3682/3682] processed=300 skipped=3382 failed=0 provisions=1268
+
+Ingestion Summary
+-----------------
+Total selected: 3682
+Processed:      300
+Skipped:        3382
+Failed:         0
+Provisions:     1268
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-22T00:04:36+01:00 chunk complete files=3682
+2026-02-22T00:04:36+01:00 target limit 3982 (current 3682)
+2026-02-22T00:04:36+01:00 attempt 1 limit 3982
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=3982
+types=216,21,124,1
+
+[100/3982] resume-skip=100 processed=0 failed=0
+[200/3982] resume-skip=200 processed=0 failed=0
+[300/3982] resume-skip=300 processed=0 failed=0
+[400/3982] resume-skip=400 processed=0 failed=0
+[500/3982] resume-skip=500 processed=0 failed=0
+[600/3982] resume-skip=600 processed=0 failed=0
+[700/3982] resume-skip=700 processed=0 failed=0
+[800/3982] resume-skip=800 processed=0 failed=0
+[900/3982] resume-skip=900 processed=0 failed=0
+[1000/3982] resume-skip=1000 processed=0 failed=0
+[1100/3982] resume-skip=1100 processed=0 failed=0
+[1200/3982] resume-skip=1200 processed=0 failed=0
+[1300/3982] resume-skip=1300 processed=0 failed=0
+[1400/3982] resume-skip=1400 processed=0 failed=0
+[1500/3982] resume-skip=1500 processed=0 failed=0
+[1600/3982] resume-skip=1600 processed=0 failed=0
+[1700/3982] resume-skip=1700 processed=0 failed=0
+[1800/3982] resume-skip=1800 processed=0 failed=0
+[1900/3982] resume-skip=1900 processed=0 failed=0
+[2000/3982] resume-skip=2000 processed=0 failed=0
+[2100/3982] resume-skip=2100 processed=0 failed=0
+[2200/3982] resume-skip=2200 processed=0 failed=0
+[2300/3982] resume-skip=2300 processed=0 failed=0
+[2400/3982] resume-skip=2400 processed=0 failed=0
+[2500/3982] resume-skip=2500 processed=0 failed=0
+[2600/3982] resume-skip=2600 processed=0 failed=0
+[2700/3982] resume-skip=2700 processed=0 failed=0
+[2800/3982] resume-skip=2800 processed=0 failed=0
+[2900/3982] resume-skip=2900 processed=0 failed=0
+[3000/3982] resume-skip=3000 processed=0 failed=0
+[3100/3982] resume-skip=3100 processed=0 failed=0
+[3200/3982] resume-skip=3200 processed=0 failed=0
+[3300/3982] resume-skip=3300 processed=0 failed=0
+[3400/3982] resume-skip=3400 processed=0 failed=0
+[3500/3982] resume-skip=3500 processed=0 failed=0
+[3600/3982] resume-skip=3600 processed=0 failed=0
+[3700/3982] processed=18 skipped=3682 failed=0 provisions=61
+[3750/3982] processed=68 skipped=3682 failed=0 provisions=125
+[3800/3982] processed=118 skipped=3682 failed=0 provisions=280
+[3850/3982] processed=168 skipped=3682 failed=0 provisions=468
+[3900/3982] processed=218 skipped=3682 failed=0 provisions=594
+[3950/3982] processed=268 skipped=3682 failed=0 provisions=752
+[3982/3982] processed=300 skipped=3682 failed=0 provisions=818
+
+Ingestion Summary
+-----------------
+Total selected: 3982
+Processed:      300
+Skipped:        3682
+Failed:         0
+Provisions:     818
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-22T00:14:34+01:00 chunk complete files=3982
+2026-02-22T00:14:34+01:00 target limit 4282 (current 3982)
+2026-02-22T00:14:34+01:00 attempt 1 limit 4282
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=4282
+types=216,21,124,1
+
+[100/4282] resume-skip=100 processed=0 failed=0
+[200/4282] resume-skip=200 processed=0 failed=0
+[300/4282] resume-skip=300 processed=0 failed=0
+[400/4282] resume-skip=400 processed=0 failed=0
+[500/4282] resume-skip=500 processed=0 failed=0
+[600/4282] resume-skip=600 processed=0 failed=0
+[700/4282] resume-skip=700 processed=0 failed=0
+[800/4282] resume-skip=800 processed=0 failed=0
+[900/4282] resume-skip=900 processed=0 failed=0
+[1000/4282] resume-skip=1000 processed=0 failed=0
+[1100/4282] resume-skip=1100 processed=0 failed=0
+[1200/4282] resume-skip=1200 processed=0 failed=0
+[1300/4282] resume-skip=1300 processed=0 failed=0
+[1400/4282] resume-skip=1400 processed=0 failed=0
+[1500/4282] resume-skip=1500 processed=0 failed=0
+[1600/4282] resume-skip=1600 processed=0 failed=0
+[1700/4282] resume-skip=1700 processed=0 failed=0
+[1800/4282] resume-skip=1800 processed=0 failed=0
+[1900/4282] resume-skip=1900 processed=0 failed=0
+[2000/4282] resume-skip=2000 processed=0 failed=0
+[2100/4282] resume-skip=2100 processed=0 failed=0
+[2200/4282] resume-skip=2200 processed=0 failed=0
+[2300/4282] resume-skip=2300 processed=0 failed=0
+[2400/4282] resume-skip=2400 processed=0 failed=0
+[2500/4282] resume-skip=2500 processed=0 failed=0
+[2600/4282] resume-skip=2600 processed=0 failed=0
+[2700/4282] resume-skip=2700 processed=0 failed=0
+[2800/4282] resume-skip=2800 processed=0 failed=0
+[2900/4282] resume-skip=2900 processed=0 failed=0
+[3000/4282] resume-skip=3000 processed=0 failed=0
+[3100/4282] resume-skip=3100 processed=0 failed=0
+[3200/4282] resume-skip=3200 processed=0 failed=0
+[3300/4282] resume-skip=3300 processed=0 failed=0
+[3400/4282] resume-skip=3400 processed=0 failed=0
+[3500/4282] resume-skip=3500 processed=0 failed=0
+[3600/4282] resume-skip=3600 processed=0 failed=0
+[3700/4282] resume-skip=3700 processed=0 failed=0
+[3800/4282] resume-skip=3800 processed=0 failed=0
+[3900/4282] resume-skip=3900 processed=0 failed=0
+[4000/4282] processed=18 skipped=3982 failed=0 provisions=358
+[4050/4282] processed=68 skipped=3982 failed=0 provisions=532
+[4100/4282] processed=118 skipped=3982 failed=0 provisions=607
+[4150/4282] processed=168 skipped=3982 failed=0 provisions=901
+[4200/4282] processed=218 skipped=3982 failed=0 provisions=1080
+[4250/4282] processed=268 skipped=3982 failed=0 provisions=1195
+[4282/4282] processed=300 skipped=3982 failed=0 provisions=1274
+
+Ingestion Summary
+-----------------
+Total selected: 4282
+Processed:      300
+Skipped:        3982
+Failed:         0
+Provisions:     1274
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-22T00:24:39+01:00 chunk complete files=4282
+2026-02-22T00:24:39+01:00 target limit 4582 (current 4282)
+2026-02-22T00:24:39+01:00 attempt 1 limit 4582
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=4582
+types=216,21,124,1
+
+[100/4582] resume-skip=100 processed=0 failed=0
+[200/4582] resume-skip=200 processed=0 failed=0
+[300/4582] resume-skip=300 processed=0 failed=0
+[400/4582] resume-skip=400 processed=0 failed=0
+[500/4582] resume-skip=500 processed=0 failed=0
+[600/4582] resume-skip=600 processed=0 failed=0
+[700/4582] resume-skip=700 processed=0 failed=0
+[800/4582] resume-skip=800 processed=0 failed=0
+[900/4582] resume-skip=900 processed=0 failed=0
+[1000/4582] resume-skip=1000 processed=0 failed=0
+[1100/4582] resume-skip=1100 processed=0 failed=0
+[1200/4582] resume-skip=1200 processed=0 failed=0
+[1300/4582] resume-skip=1300 processed=0 failed=0
+[1400/4582] resume-skip=1400 processed=0 failed=0
+[1500/4582] resume-skip=1500 processed=0 failed=0
+[1600/4582] resume-skip=1600 processed=0 failed=0
+[1700/4582] resume-skip=1700 processed=0 failed=0
+[1800/4582] resume-skip=1800 processed=0 failed=0
+[1900/4582] resume-skip=1900 processed=0 failed=0
+[2000/4582] resume-skip=2000 processed=0 failed=0
+[2100/4582] resume-skip=2100 processed=0 failed=0
+[2200/4582] resume-skip=2200 processed=0 failed=0
+[2300/4582] resume-skip=2300 processed=0 failed=0
+[2400/4582] resume-skip=2400 processed=0 failed=0
+[2500/4582] resume-skip=2500 processed=0 failed=0
+[2600/4582] resume-skip=2600 processed=0 failed=0
+[2700/4582] resume-skip=2700 processed=0 failed=0
+[2800/4582] resume-skip=2800 processed=0 failed=0
+[2900/4582] resume-skip=2900 processed=0 failed=0
+[3000/4582] resume-skip=3000 processed=0 failed=0
+[3100/4582] resume-skip=3100 processed=0 failed=0
+[3200/4582] resume-skip=3200 processed=0 failed=0
+[3300/4582] resume-skip=3300 processed=0 failed=0
+[3400/4582] resume-skip=3400 processed=0 failed=0
+[3500/4582] resume-skip=3500 processed=0 failed=0
+[3600/4582] resume-skip=3600 processed=0 failed=0
+[3700/4582] resume-skip=3700 processed=0 failed=0
+[3800/4582] resume-skip=3800 processed=0 failed=0
+[3900/4582] resume-skip=3900 processed=0 failed=0
+[4000/4582] resume-skip=4000 processed=0 failed=0
+[4100/4582] resume-skip=4100 processed=0 failed=0
+[4200/4582] resume-skip=4200 processed=0 failed=0
+[4300/4582] processed=18 skipped=4282 failed=0 provisions=18
+[4350/4582] processed=68 skipped=4282 failed=0 provisions=68
+[4400/4582] processed=118 skipped=4282 failed=0 provisions=180
+[4450/4582] processed=168 skipped=4282 failed=0 provisions=256
+[4500/4582] processed=218 skipped=4282 failed=0 provisions=496
+[4550/4582] processed=268 skipped=4282 failed=0 provisions=591
+[4582/4582] processed=300 skipped=4282 failed=0 provisions=630
+
+Ingestion Summary
+-----------------
+Total selected: 4582
+Processed:      300
+Skipped:        4282
+Failed:         0
+Provisions:     630
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-22T00:34:51+01:00 chunk complete files=4582
+2026-02-22T00:34:51+01:00 target limit 4882 (current 4582)
+2026-02-22T00:34:51+01:00 attempt 1 limit 4882
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=4882
+types=216,21,124,1
+
+[100/4882] resume-skip=100 processed=0 failed=0
+[200/4882] resume-skip=200 processed=0 failed=0
+[300/4882] resume-skip=300 processed=0 failed=0
+[400/4882] resume-skip=400 processed=0 failed=0
+[500/4882] resume-skip=500 processed=0 failed=0
+[600/4882] resume-skip=600 processed=0 failed=0
+[700/4882] resume-skip=700 processed=0 failed=0
+[800/4882] resume-skip=800 processed=0 failed=0
+[900/4882] resume-skip=900 processed=0 failed=0
+[1000/4882] resume-skip=1000 processed=0 failed=0
+[1100/4882] resume-skip=1100 processed=0 failed=0
+[1200/4882] resume-skip=1200 processed=0 failed=0
+[1300/4882] resume-skip=1300 processed=0 failed=0
+[1400/4882] resume-skip=1400 processed=0 failed=0
+[1500/4882] resume-skip=1500 processed=0 failed=0
+[1600/4882] resume-skip=1600 processed=0 failed=0
+[1700/4882] resume-skip=1700 processed=0 failed=0
+[1800/4882] resume-skip=1800 processed=0 failed=0
+[1900/4882] resume-skip=1900 processed=0 failed=0
+[2000/4882] resume-skip=2000 processed=0 failed=0
+[2100/4882] resume-skip=2100 processed=0 failed=0
+[2200/4882] resume-skip=2200 processed=0 failed=0
+[2300/4882] resume-skip=2300 processed=0 failed=0
+[2400/4882] resume-skip=2400 processed=0 failed=0
+[2500/4882] resume-skip=2500 processed=0 failed=0
+[2600/4882] resume-skip=2600 processed=0 failed=0
+[2700/4882] resume-skip=2700 processed=0 failed=0
+[2800/4882] resume-skip=2800 processed=0 failed=0
+[2900/4882] resume-skip=2900 processed=0 failed=0
+[3000/4882] resume-skip=3000 processed=0 failed=0
+[3100/4882] resume-skip=3100 processed=0 failed=0
+[3200/4882] resume-skip=3200 processed=0 failed=0
+[3300/4882] resume-skip=3300 processed=0 failed=0
+[3400/4882] resume-skip=3400 processed=0 failed=0
+[3500/4882] resume-skip=3500 processed=0 failed=0
+[3600/4882] resume-skip=3600 processed=0 failed=0
+[3700/4882] resume-skip=3700 processed=0 failed=0
+[3800/4882] resume-skip=3800 processed=0 failed=0
+[3900/4882] resume-skip=3900 processed=0 failed=0
+[4000/4882] resume-skip=4000 processed=0 failed=0
+[4100/4882] resume-skip=4100 processed=0 failed=0
+[4200/4882] resume-skip=4200 processed=0 failed=0
+[4300/4882] resume-skip=4300 processed=0 failed=0
+[4400/4882] resume-skip=4400 processed=0 failed=0
+[4500/4882] resume-skip=4500 processed=0 failed=0
+[4600/4882] processed=18 skipped=4582 failed=0 provisions=42
+[4650/4882] processed=68 skipped=4582 failed=0 provisions=125
+[4700/4882] processed=118 skipped=4582 failed=0 provisions=333
+[4750/4882] processed=168 skipped=4582 failed=0 provisions=511
+[4800/4882] processed=218 skipped=4582 failed=0 provisions=576
+[4850/4882] processed=268 skipped=4582 failed=0 provisions=948
+[4882/4882] processed=300 skipped=4582 failed=0 provisions=1144
+
+Ingestion Summary
+-----------------
+Total selected: 4882
+Processed:      300
+Skipped:        4582
+Failed:         0
+Provisions:     1144
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-22T00:44:50+01:00 chunk complete files=4882
+2026-02-22T00:44:50+01:00 target limit 5182 (current 4882)
+2026-02-22T00:44:50+01:00 attempt 1 limit 5182
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=5182
+types=216,21,124,1
+
+[100/5182] resume-skip=100 processed=0 failed=0
+[200/5182] resume-skip=200 processed=0 failed=0
+[300/5182] resume-skip=300 processed=0 failed=0
+[400/5182] resume-skip=400 processed=0 failed=0
+[500/5182] resume-skip=500 processed=0 failed=0
+[600/5182] resume-skip=600 processed=0 failed=0
+[700/5182] resume-skip=700 processed=0 failed=0
+[800/5182] resume-skip=800 processed=0 failed=0
+[900/5182] resume-skip=900 processed=0 failed=0
+[1000/5182] resume-skip=1000 processed=0 failed=0
+[1100/5182] resume-skip=1100 processed=0 failed=0
+[1200/5182] resume-skip=1200 processed=0 failed=0
+[1300/5182] resume-skip=1300 processed=0 failed=0
+[1400/5182] resume-skip=1400 processed=0 failed=0
+[1500/5182] resume-skip=1500 processed=0 failed=0
+[1600/5182] resume-skip=1600 processed=0 failed=0
+[1700/5182] resume-skip=1700 processed=0 failed=0
+[1800/5182] resume-skip=1800 processed=0 failed=0
+[1900/5182] resume-skip=1900 processed=0 failed=0
+[2000/5182] resume-skip=2000 processed=0 failed=0
+[2100/5182] resume-skip=2100 processed=0 failed=0
+[2200/5182] resume-skip=2200 processed=0 failed=0
+[2300/5182] resume-skip=2300 processed=0 failed=0
+[2400/5182] resume-skip=2400 processed=0 failed=0
+[2500/5182] resume-skip=2500 processed=0 failed=0
+[2600/5182] resume-skip=2600 processed=0 failed=0
+[2700/5182] resume-skip=2700 processed=0 failed=0
+[2800/5182] resume-skip=2800 processed=0 failed=0
+[2900/5182] resume-skip=2900 processed=0 failed=0
+[3000/5182] resume-skip=3000 processed=0 failed=0
+[3100/5182] resume-skip=3100 processed=0 failed=0
+[3200/5182] resume-skip=3200 processed=0 failed=0
+[3300/5182] resume-skip=3300 processed=0 failed=0
+[3400/5182] resume-skip=3400 processed=0 failed=0
+[3500/5182] resume-skip=3500 processed=0 failed=0
+[3600/5182] resume-skip=3600 processed=0 failed=0
+[3700/5182] resume-skip=3700 processed=0 failed=0
+[3800/5182] resume-skip=3800 processed=0 failed=0
+[3900/5182] resume-skip=3900 processed=0 failed=0
+[4000/5182] resume-skip=4000 processed=0 failed=0
+[4100/5182] resume-skip=4100 processed=0 failed=0
+[4200/5182] resume-skip=4200 processed=0 failed=0
+[4300/5182] resume-skip=4300 processed=0 failed=0
+[4400/5182] resume-skip=4400 processed=0 failed=0
+[4500/5182] resume-skip=4500 processed=0 failed=0
+[4600/5182] resume-skip=4600 processed=0 failed=0
+[4700/5182] resume-skip=4700 processed=0 failed=0
+[4800/5182] resume-skip=4800 processed=0 failed=0
+[4900/5182] processed=18 skipped=4882 failed=0 provisions=95
+[4950/5182] processed=68 skipped=4882 failed=0 provisions=179
+[5000/5182] processed=118 skipped=4882 failed=0 provisions=422
+[5050/5182] processed=168 skipped=4882 failed=0 provisions=626
+[5100/5182] processed=218 skipped=4882 failed=0 provisions=943
+[5150/5182] processed=268 skipped=4882 failed=0 provisions=1041
+[5182/5182] processed=300 skipped=4882 failed=0 provisions=1158
+
+Ingestion Summary
+-----------------
+Total selected: 5182
+Processed:      300
+Skipped:        4882
+Failed:         0
+Provisions:     1158
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-22T00:54:59+01:00 chunk complete files=5182
+2026-02-22T00:54:59+01:00 target limit 5482 (current 5182)
+2026-02-22T00:54:59+01:00 attempt 1 limit 5482
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=5482
+types=216,21,124,1
+
+[100/5482] resume-skip=100 processed=0 failed=0
+[200/5482] resume-skip=200 processed=0 failed=0
+[300/5482] resume-skip=300 processed=0 failed=0
+[400/5482] resume-skip=400 processed=0 failed=0
+[500/5482] resume-skip=500 processed=0 failed=0
+[600/5482] resume-skip=600 processed=0 failed=0
+[700/5482] resume-skip=700 processed=0 failed=0
+[800/5482] resume-skip=800 processed=0 failed=0
+[900/5482] resume-skip=900 processed=0 failed=0
+[1000/5482] resume-skip=1000 processed=0 failed=0
+[1100/5482] resume-skip=1100 processed=0 failed=0
+[1200/5482] resume-skip=1200 processed=0 failed=0
+[1300/5482] resume-skip=1300 processed=0 failed=0
+[1400/5482] resume-skip=1400 processed=0 failed=0
+[1500/5482] resume-skip=1500 processed=0 failed=0
+[1600/5482] resume-skip=1600 processed=0 failed=0
+[1700/5482] resume-skip=1700 processed=0 failed=0
+[1800/5482] resume-skip=1800 processed=0 failed=0
+[1900/5482] resume-skip=1900 processed=0 failed=0
+[2000/5482] resume-skip=2000 processed=0 failed=0
+[2100/5482] resume-skip=2100 processed=0 failed=0
+[2200/5482] resume-skip=2200 processed=0 failed=0
+[2300/5482] resume-skip=2300 processed=0 failed=0
+[2400/5482] resume-skip=2400 processed=0 failed=0
+[2500/5482] resume-skip=2500 processed=0 failed=0
+[2600/5482] resume-skip=2600 processed=0 failed=0
+[2700/5482] resume-skip=2700 processed=0 failed=0
+[2800/5482] resume-skip=2800 processed=0 failed=0
+[2900/5482] resume-skip=2900 processed=0 failed=0
+[3000/5482] resume-skip=3000 processed=0 failed=0
+[3100/5482] resume-skip=3100 processed=0 failed=0
+[3200/5482] resume-skip=3200 processed=0 failed=0
+[3300/5482] resume-skip=3300 processed=0 failed=0
+[3400/5482] resume-skip=3400 processed=0 failed=0
+[3500/5482] resume-skip=3500 processed=0 failed=0
+[3600/5482] resume-skip=3600 processed=0 failed=0
+[3700/5482] resume-skip=3700 processed=0 failed=0
+[3800/5482] resume-skip=3800 processed=0 failed=0
+[3900/5482] resume-skip=3900 processed=0 failed=0
+[4000/5482] resume-skip=4000 processed=0 failed=0
+[4100/5482] resume-skip=4100 processed=0 failed=0
+[4200/5482] resume-skip=4200 processed=0 failed=0
+[4300/5482] resume-skip=4300 processed=0 failed=0
+[4400/5482] resume-skip=4400 processed=0 failed=0
+[4500/5482] resume-skip=4500 processed=0 failed=0
+[4600/5482] resume-skip=4600 processed=0 failed=0
+[4700/5482] resume-skip=4700 processed=0 failed=0
+[4800/5482] resume-skip=4800 processed=0 failed=0
+[4900/5482] resume-skip=4900 processed=0 failed=0
+[5000/5482] resume-skip=5000 processed=0 failed=0
+[5100/5482] resume-skip=5100 processed=0 failed=0
+[5200/5482] processed=18 skipped=5182 failed=0 provisions=42
+[5250/5482] processed=68 skipped=5182 failed=0 provisions=132
+[5300/5482] processed=118 skipped=5182 failed=0 provisions=472
+[5350/5482] processed=168 skipped=5182 failed=0 provisions=719
+[5400/5482] processed=218 skipped=5182 failed=0 provisions=963
+[5450/5482] processed=268 skipped=5182 failed=0 provisions=1141
+[5482/5482] processed=300 skipped=5182 failed=0 provisions=1260
+
+Ingestion Summary
+-----------------
+Total selected: 5482
+Processed:      300
+Skipped:        5182
+Failed:         0
+Provisions:     1260
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-22T01:05:20+01:00 chunk complete files=5482
+2026-02-22T01:05:20+01:00 target limit 5782 (current 5482)
+2026-02-22T01:05:20+01:00 attempt 1 limit 5782
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=5782
+types=216,21,124,1
+
+[100/5782] resume-skip=100 processed=0 failed=0
+[200/5782] resume-skip=200 processed=0 failed=0
+[300/5782] resume-skip=300 processed=0 failed=0
+[400/5782] resume-skip=400 processed=0 failed=0
+[500/5782] resume-skip=500 processed=0 failed=0
+[600/5782] resume-skip=600 processed=0 failed=0
+[700/5782] resume-skip=700 processed=0 failed=0
+[800/5782] resume-skip=800 processed=0 failed=0
+[900/5782] resume-skip=900 processed=0 failed=0
+[1000/5782] resume-skip=1000 processed=0 failed=0
+[1100/5782] resume-skip=1100 processed=0 failed=0
+[1200/5782] resume-skip=1200 processed=0 failed=0
+[1300/5782] resume-skip=1300 processed=0 failed=0
+[1400/5782] resume-skip=1400 processed=0 failed=0
+[1500/5782] resume-skip=1500 processed=0 failed=0
+[1600/5782] resume-skip=1600 processed=0 failed=0
+[1700/5782] resume-skip=1700 processed=0 failed=0
+[1800/5782] resume-skip=1800 processed=0 failed=0
+[1900/5782] resume-skip=1900 processed=0 failed=0
+[2000/5782] resume-skip=2000 processed=0 failed=0
+[2100/5782] resume-skip=2100 processed=0 failed=0
+[2200/5782] resume-skip=2200 processed=0 failed=0
+[2300/5782] resume-skip=2300 processed=0 failed=0
+[2400/5782] resume-skip=2400 processed=0 failed=0
+[2500/5782] resume-skip=2500 processed=0 failed=0
+[2600/5782] resume-skip=2600 processed=0 failed=0
+[2700/5782] resume-skip=2700 processed=0 failed=0
+[2800/5782] resume-skip=2800 processed=0 failed=0
+[2900/5782] resume-skip=2900 processed=0 failed=0
+[3000/5782] resume-skip=3000 processed=0 failed=0
+[3100/5782] resume-skip=3100 processed=0 failed=0
+[3200/5782] resume-skip=3200 processed=0 failed=0
+[3300/5782] resume-skip=3300 processed=0 failed=0
+[3400/5782] resume-skip=3400 processed=0 failed=0
+[3500/5782] resume-skip=3500 processed=0 failed=0
+[3600/5782] resume-skip=3600 processed=0 failed=0
+[3700/5782] resume-skip=3700 processed=0 failed=0
+[3800/5782] resume-skip=3800 processed=0 failed=0
+[3900/5782] resume-skip=3900 processed=0 failed=0
+[4000/5782] resume-skip=4000 processed=0 failed=0
+[4100/5782] resume-skip=4100 processed=0 failed=0
+[4200/5782] resume-skip=4200 processed=0 failed=0
+[4300/5782] resume-skip=4300 processed=0 failed=0
+[4400/5782] resume-skip=4400 processed=0 failed=0
+[4500/5782] resume-skip=4500 processed=0 failed=0
+[4600/5782] resume-skip=4600 processed=0 failed=0
+[4700/5782] resume-skip=4700 processed=0 failed=0
+[4800/5782] resume-skip=4800 processed=0 failed=0
+[4900/5782] resume-skip=4900 processed=0 failed=0
+[5000/5782] resume-skip=5000 processed=0 failed=0
+[5100/5782] resume-skip=5100 processed=0 failed=0
+[5200/5782] resume-skip=5200 processed=0 failed=0
+[5300/5782] resume-skip=5300 processed=0 failed=0
+[5400/5782] resume-skip=5400 processed=0 failed=0
+[5500/5782] processed=18 skipped=5482 failed=0 provisions=28
+[5550/5782] processed=68 skipped=5482 failed=0 provisions=252
+[5600/5782] processed=118 skipped=5482 failed=0 provisions=637
+[5650/5782] processed=168 skipped=5482 failed=0 provisions=1007
+[5700/5782] processed=218 skipped=5482 failed=0 provisions=1247
+[5750/5782] processed=268 skipped=5482 failed=0 provisions=1394
+[5782/5782] processed=300 skipped=5482 failed=0 provisions=1492
+
+Ingestion Summary
+-----------------
+Total selected: 5782
+Processed:      300
+Skipped:        5482
+Failed:         0
+Provisions:     1492
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-22T01:15:28+01:00 chunk complete files=5782
+2026-02-22T01:15:28+01:00 target limit 6082 (current 5782)
+2026-02-22T01:15:28+01:00 attempt 1 limit 6082
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=6082
+types=216,21,124,1
+
+[100/6082] resume-skip=100 processed=0 failed=0
+[200/6082] resume-skip=200 processed=0 failed=0
+[300/6082] resume-skip=300 processed=0 failed=0
+[400/6082] resume-skip=400 processed=0 failed=0
+[500/6082] resume-skip=500 processed=0 failed=0
+[600/6082] resume-skip=600 processed=0 failed=0
+[700/6082] resume-skip=700 processed=0 failed=0
+[800/6082] resume-skip=800 processed=0 failed=0
+[900/6082] resume-skip=900 processed=0 failed=0
+[1000/6082] resume-skip=1000 processed=0 failed=0
+[1100/6082] resume-skip=1100 processed=0 failed=0
+[1200/6082] resume-skip=1200 processed=0 failed=0
+[1300/6082] resume-skip=1300 processed=0 failed=0
+[1400/6082] resume-skip=1400 processed=0 failed=0
+[1500/6082] resume-skip=1500 processed=0 failed=0
+[1600/6082] resume-skip=1600 processed=0 failed=0
+[1700/6082] resume-skip=1700 processed=0 failed=0
+[1800/6082] resume-skip=1800 processed=0 failed=0
+[1900/6082] resume-skip=1900 processed=0 failed=0
+[2000/6082] resume-skip=2000 processed=0 failed=0
+[2100/6082] resume-skip=2100 processed=0 failed=0
+[2200/6082] resume-skip=2200 processed=0 failed=0
+[2300/6082] resume-skip=2300 processed=0 failed=0
+[2400/6082] resume-skip=2400 processed=0 failed=0
+[2500/6082] resume-skip=2500 processed=0 failed=0
+[2600/6082] resume-skip=2600 processed=0 failed=0
+[2700/6082] resume-skip=2700 processed=0 failed=0
+[2800/6082] resume-skip=2800 processed=0 failed=0
+[2900/6082] resume-skip=2900 processed=0 failed=0
+[3000/6082] resume-skip=3000 processed=0 failed=0
+[3100/6082] resume-skip=3100 processed=0 failed=0
+[3200/6082] resume-skip=3200 processed=0 failed=0
+[3300/6082] resume-skip=3300 processed=0 failed=0
+[3400/6082] resume-skip=3400 processed=0 failed=0
+[3500/6082] resume-skip=3500 processed=0 failed=0
+[3600/6082] resume-skip=3600 processed=0 failed=0
+[3700/6082] resume-skip=3700 processed=0 failed=0
+[3800/6082] resume-skip=3800 processed=0 failed=0
+[3900/6082] resume-skip=3900 processed=0 failed=0
+[4000/6082] resume-skip=4000 processed=0 failed=0
+[4100/6082] resume-skip=4100 processed=0 failed=0
+[4200/6082] resume-skip=4200 processed=0 failed=0
+[4300/6082] resume-skip=4300 processed=0 failed=0
+[4400/6082] resume-skip=4400 processed=0 failed=0
+[4500/6082] resume-skip=4500 processed=0 failed=0
+[4600/6082] resume-skip=4600 processed=0 failed=0
+[4700/6082] resume-skip=4700 processed=0 failed=0
+[4800/6082] resume-skip=4800 processed=0 failed=0
+[4900/6082] resume-skip=4900 processed=0 failed=0
+[5000/6082] resume-skip=5000 processed=0 failed=0
+[5100/6082] resume-skip=5100 processed=0 failed=0
+[5200/6082] resume-skip=5200 processed=0 failed=0
+[5300/6082] resume-skip=5300 processed=0 failed=0
+[5400/6082] resume-skip=5400 processed=0 failed=0
+[5500/6082] resume-skip=5500 processed=0 failed=0
+[5600/6082] resume-skip=5600 processed=0 failed=0
+[5700/6082] resume-skip=5700 processed=0 failed=0
+[5800/6082] processed=18 skipped=5782 failed=0 provisions=66
+[5850/6082] processed=68 skipped=5782 failed=0 provisions=147
+[5900/6082] processed=118 skipped=5782 failed=0 provisions=258
+[5950/6082] processed=168 skipped=5782 failed=0 provisions=520
+[6000/6082] processed=218 skipped=5782 failed=0 provisions=761
+[6050/6082] processed=268 skipped=5782 failed=0 provisions=994
+[6082/6082] processed=300 skipped=5782 failed=0 provisions=1206
+
+Ingestion Summary
+-----------------
+Total selected: 6082
+Processed:      300
+Skipped:        5782
+Failed:         0
+Provisions:     1206
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-22T01:25:35+01:00 chunk complete files=6082
+2026-02-22T01:25:35+01:00 target limit 6382 (current 6082)
+2026-02-22T01:25:35+01:00 attempt 1 limit 6382
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=6382
+types=216,21,124,1
+
+[100/6382] resume-skip=100 processed=0 failed=0
+[200/6382] resume-skip=200 processed=0 failed=0
+[300/6382] resume-skip=300 processed=0 failed=0
+[400/6382] resume-skip=400 processed=0 failed=0
+[500/6382] resume-skip=500 processed=0 failed=0
+[600/6382] resume-skip=600 processed=0 failed=0
+[700/6382] resume-skip=700 processed=0 failed=0
+[800/6382] resume-skip=800 processed=0 failed=0
+[900/6382] resume-skip=900 processed=0 failed=0
+[1000/6382] resume-skip=1000 processed=0 failed=0
+[1100/6382] resume-skip=1100 processed=0 failed=0
+[1200/6382] resume-skip=1200 processed=0 failed=0
+[1300/6382] resume-skip=1300 processed=0 failed=0
+[1400/6382] resume-skip=1400 processed=0 failed=0
+[1500/6382] resume-skip=1500 processed=0 failed=0
+[1600/6382] resume-skip=1600 processed=0 failed=0
+[1700/6382] resume-skip=1700 processed=0 failed=0
+[1800/6382] resume-skip=1800 processed=0 failed=0
+[1900/6382] resume-skip=1900 processed=0 failed=0
+[2000/6382] resume-skip=2000 processed=0 failed=0
+[2100/6382] resume-skip=2100 processed=0 failed=0
+[2200/6382] resume-skip=2200 processed=0 failed=0
+[2300/6382] resume-skip=2300 processed=0 failed=0
+[2400/6382] resume-skip=2400 processed=0 failed=0
+[2500/6382] resume-skip=2500 processed=0 failed=0
+[2600/6382] resume-skip=2600 processed=0 failed=0
+[2700/6382] resume-skip=2700 processed=0 failed=0
+[2800/6382] resume-skip=2800 processed=0 failed=0
+[2900/6382] resume-skip=2900 processed=0 failed=0
+[3000/6382] resume-skip=3000 processed=0 failed=0
+[3100/6382] resume-skip=3100 processed=0 failed=0
+[3200/6382] resume-skip=3200 processed=0 failed=0
+[3300/6382] resume-skip=3300 processed=0 failed=0
+[3400/6382] resume-skip=3400 processed=0 failed=0
+[3500/6382] resume-skip=3500 processed=0 failed=0
+[3600/6382] resume-skip=3600 processed=0 failed=0
+[3700/6382] resume-skip=3700 processed=0 failed=0
+[3800/6382] resume-skip=3800 processed=0 failed=0
+[3900/6382] resume-skip=3900 processed=0 failed=0
+[4000/6382] resume-skip=4000 processed=0 failed=0
+[4100/6382] resume-skip=4100 processed=0 failed=0
+[4200/6382] resume-skip=4200 processed=0 failed=0
+[4300/6382] resume-skip=4300 processed=0 failed=0
+[4400/6382] resume-skip=4400 processed=0 failed=0
+[4500/6382] resume-skip=4500 processed=0 failed=0
+[4600/6382] resume-skip=4600 processed=0 failed=0
+[4700/6382] resume-skip=4700 processed=0 failed=0
+[4800/6382] resume-skip=4800 processed=0 failed=0
+[4900/6382] resume-skip=4900 processed=0 failed=0
+[5000/6382] resume-skip=5000 processed=0 failed=0
+[5100/6382] resume-skip=5100 processed=0 failed=0
+[5200/6382] resume-skip=5200 processed=0 failed=0
+[5300/6382] resume-skip=5300 processed=0 failed=0
+[5400/6382] resume-skip=5400 processed=0 failed=0
+[5500/6382] resume-skip=5500 processed=0 failed=0
+[5600/6382] resume-skip=5600 processed=0 failed=0
+[5700/6382] resume-skip=5700 processed=0 failed=0
+[5800/6382] resume-skip=5800 processed=0 failed=0
+[5900/6382] resume-skip=5900 processed=0 failed=0
+[6000/6382] resume-skip=6000 processed=0 failed=0
+[6100/6382] processed=18 skipped=6082 failed=0 provisions=20
+[6150/6382] processed=68 skipped=6082 failed=0 provisions=469
+[6200/6382] processed=118 skipped=6082 failed=0 provisions=739
+[6250/6382] processed=168 skipped=6082 failed=0 provisions=1068
+[6300/6382] processed=218 skipped=6082 failed=0 provisions=1303
+[6350/6382] processed=268 skipped=6082 failed=0 provisions=1548
+[6382/6382] processed=300 skipped=6082 failed=0 provisions=1755
+
+Ingestion Summary
+-----------------
+Total selected: 6382
+Processed:      300
+Skipped:        6082
+Failed:         0
+Provisions:     1755
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-22T01:35:50+01:00 chunk complete files=6382
+2026-02-22T01:35:50+01:00 target limit 6682 (current 6382)
+2026-02-22T01:35:50+01:00 attempt 1 limit 6682
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=6682
+types=216,21,124,1
+
+[100/6682] resume-skip=100 processed=0 failed=0
+[200/6682] resume-skip=200 processed=0 failed=0
+[300/6682] resume-skip=300 processed=0 failed=0
+[400/6682] resume-skip=400 processed=0 failed=0
+[500/6682] resume-skip=500 processed=0 failed=0
+[600/6682] resume-skip=600 processed=0 failed=0
+[700/6682] resume-skip=700 processed=0 failed=0
+[800/6682] resume-skip=800 processed=0 failed=0
+[900/6682] resume-skip=900 processed=0 failed=0
+[1000/6682] resume-skip=1000 processed=0 failed=0
+[1100/6682] resume-skip=1100 processed=0 failed=0
+[1200/6682] resume-skip=1200 processed=0 failed=0
+[1300/6682] resume-skip=1300 processed=0 failed=0
+[1400/6682] resume-skip=1400 processed=0 failed=0
+[1500/6682] resume-skip=1500 processed=0 failed=0
+[1600/6682] resume-skip=1600 processed=0 failed=0
+[1700/6682] resume-skip=1700 processed=0 failed=0
+[1800/6682] resume-skip=1800 processed=0 failed=0
+[1900/6682] resume-skip=1900 processed=0 failed=0
+[2000/6682] resume-skip=2000 processed=0 failed=0
+[2100/6682] resume-skip=2100 processed=0 failed=0
+[2200/6682] resume-skip=2200 processed=0 failed=0
+[2300/6682] resume-skip=2300 processed=0 failed=0
+[2400/6682] resume-skip=2400 processed=0 failed=0
+[2500/6682] resume-skip=2500 processed=0 failed=0
+[2600/6682] resume-skip=2600 processed=0 failed=0
+[2700/6682] resume-skip=2700 processed=0 failed=0
+[2800/6682] resume-skip=2800 processed=0 failed=0
+[2900/6682] resume-skip=2900 processed=0 failed=0
+[3000/6682] resume-skip=3000 processed=0 failed=0
+[3100/6682] resume-skip=3100 processed=0 failed=0
+[3200/6682] resume-skip=3200 processed=0 failed=0
+[3300/6682] resume-skip=3300 processed=0 failed=0
+[3400/6682] resume-skip=3400 processed=0 failed=0
+[3500/6682] resume-skip=3500 processed=0 failed=0
+[3600/6682] resume-skip=3600 processed=0 failed=0
+[3700/6682] resume-skip=3700 processed=0 failed=0
+[3800/6682] resume-skip=3800 processed=0 failed=0
+[3900/6682] resume-skip=3900 processed=0 failed=0
+[4000/6682] resume-skip=4000 processed=0 failed=0
+[4100/6682] resume-skip=4100 processed=0 failed=0
+[4200/6682] resume-skip=4200 processed=0 failed=0
+[4300/6682] resume-skip=4300 processed=0 failed=0
+[4400/6682] resume-skip=4400 processed=0 failed=0
+[4500/6682] resume-skip=4500 processed=0 failed=0
+[4600/6682] resume-skip=4600 processed=0 failed=0
+[4700/6682] resume-skip=4700 processed=0 failed=0
+[4800/6682] resume-skip=4800 processed=0 failed=0
+[4900/6682] resume-skip=4900 processed=0 failed=0
+[5000/6682] resume-skip=5000 processed=0 failed=0
+[5100/6682] resume-skip=5100 processed=0 failed=0
+[5200/6682] resume-skip=5200 processed=0 failed=0
+[5300/6682] resume-skip=5300 processed=0 failed=0
+[5400/6682] resume-skip=5400 processed=0 failed=0
+[5500/6682] resume-skip=5500 processed=0 failed=0
+[5600/6682] resume-skip=5600 processed=0 failed=0
+[5700/6682] resume-skip=5700 processed=0 failed=0
+[5800/6682] resume-skip=5800 processed=0 failed=0
+[5900/6682] resume-skip=5900 processed=0 failed=0
+[6000/6682] resume-skip=6000 processed=0 failed=0
+[6100/6682] resume-skip=6100 processed=0 failed=0
+[6200/6682] resume-skip=6200 processed=0 failed=0
+[6300/6682] resume-skip=6300 processed=0 failed=0
+[6400/6682] processed=18 skipped=6382 failed=0 provisions=143
+[6450/6682] processed=68 skipped=6382 failed=0 provisions=347
+[6500/6682] processed=118 skipped=6382 failed=0 provisions=577
+[6550/6682] processed=168 skipped=6382 failed=0 provisions=892
+[6600/6682] processed=218 skipped=6382 failed=0 provisions=1018
+[6650/6682] processed=268 skipped=6382 failed=0 provisions=1379
+[6682/6682] processed=300 skipped=6382 failed=0 provisions=1439
+
+Ingestion Summary
+-----------------
+Total selected: 6682
+Processed:      300
+Skipped:        6382
+Failed:         0
+Provisions:     1439
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-22T01:46:06+01:00 chunk complete files=6682
+2026-02-22T01:46:06+01:00 target limit 6982 (current 6682)
+2026-02-22T01:46:06+01:00 attempt 1 limit 6982
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=6982
+types=216,21,124,1
+
+[100/6982] resume-skip=100 processed=0 failed=0
+[200/6982] resume-skip=200 processed=0 failed=0
+[300/6982] resume-skip=300 processed=0 failed=0
+[400/6982] resume-skip=400 processed=0 failed=0
+[500/6982] resume-skip=500 processed=0 failed=0
+[600/6982] resume-skip=600 processed=0 failed=0
+[700/6982] resume-skip=700 processed=0 failed=0
+[800/6982] resume-skip=800 processed=0 failed=0
+[900/6982] resume-skip=900 processed=0 failed=0
+[1000/6982] resume-skip=1000 processed=0 failed=0
+[1100/6982] resume-skip=1100 processed=0 failed=0
+[1200/6982] resume-skip=1200 processed=0 failed=0
+[1300/6982] resume-skip=1300 processed=0 failed=0
+[1400/6982] resume-skip=1400 processed=0 failed=0
+[1500/6982] resume-skip=1500 processed=0 failed=0
+[1600/6982] resume-skip=1600 processed=0 failed=0
+[1700/6982] resume-skip=1700 processed=0 failed=0
+[1800/6982] resume-skip=1800 processed=0 failed=0
+[1900/6982] resume-skip=1900 processed=0 failed=0
+[2000/6982] resume-skip=2000 processed=0 failed=0
+[2100/6982] resume-skip=2100 processed=0 failed=0
+[2200/6982] resume-skip=2200 processed=0 failed=0
+[2300/6982] resume-skip=2300 processed=0 failed=0
+[2400/6982] resume-skip=2400 processed=0 failed=0
+[2500/6982] resume-skip=2500 processed=0 failed=0
+[2600/6982] resume-skip=2600 processed=0 failed=0
+[2700/6982] resume-skip=2700 processed=0 failed=0
+[2800/6982] resume-skip=2800 processed=0 failed=0
+[2900/6982] resume-skip=2900 processed=0 failed=0
+[3000/6982] resume-skip=3000 processed=0 failed=0
+[3100/6982] resume-skip=3100 processed=0 failed=0
+[3200/6982] resume-skip=3200 processed=0 failed=0
+[3300/6982] resume-skip=3300 processed=0 failed=0
+[3400/6982] resume-skip=3400 processed=0 failed=0
+[3500/6982] resume-skip=3500 processed=0 failed=0
+[3600/6982] resume-skip=3600 processed=0 failed=0
+[3700/6982] resume-skip=3700 processed=0 failed=0
+[3800/6982] resume-skip=3800 processed=0 failed=0
+[3900/6982] resume-skip=3900 processed=0 failed=0
+[4000/6982] resume-skip=4000 processed=0 failed=0
+[4100/6982] resume-skip=4100 processed=0 failed=0
+[4200/6982] resume-skip=4200 processed=0 failed=0
+[4300/6982] resume-skip=4300 processed=0 failed=0
+[4400/6982] resume-skip=4400 processed=0 failed=0
+[4500/6982] resume-skip=4500 processed=0 failed=0
+[4600/6982] resume-skip=4600 processed=0 failed=0
+[4700/6982] resume-skip=4700 processed=0 failed=0
+[4800/6982] resume-skip=4800 processed=0 failed=0
+[4900/6982] resume-skip=4900 processed=0 failed=0
+[5000/6982] resume-skip=5000 processed=0 failed=0
+[5100/6982] resume-skip=5100 processed=0 failed=0
+[5200/6982] resume-skip=5200 processed=0 failed=0
+[5300/6982] resume-skip=5300 processed=0 failed=0
+[5400/6982] resume-skip=5400 processed=0 failed=0
+[5500/6982] resume-skip=5500 processed=0 failed=0
+[5600/6982] resume-skip=5600 processed=0 failed=0
+[5700/6982] resume-skip=5700 processed=0 failed=0
+[5800/6982] resume-skip=5800 processed=0 failed=0
+[5900/6982] resume-skip=5900 processed=0 failed=0
+[6000/6982] resume-skip=6000 processed=0 failed=0
+[6100/6982] resume-skip=6100 processed=0 failed=0
+[6200/6982] resume-skip=6200 processed=0 failed=0
+[6300/6982] resume-skip=6300 processed=0 failed=0
+[6400/6982] resume-skip=6400 processed=0 failed=0
+[6500/6982] resume-skip=6500 processed=0 failed=0
+[6600/6982] resume-skip=6600 processed=0 failed=0
+[6700/6982] processed=18 skipped=6682 failed=0 provisions=45
+[6750/6982] processed=68 skipped=6682 failed=0 provisions=285
+[6800/6982] processed=118 skipped=6682 failed=0 provisions=578
+[6850/6982] processed=168 skipped=6682 failed=0 provisions=800
+[6900/6982] processed=218 skipped=6682 failed=0 provisions=1050
+[6950/6982] processed=268 skipped=6682 failed=0 provisions=1278
+[6982/6982] processed=300 skipped=6682 failed=0 provisions=1496
+
+Ingestion Summary
+-----------------
+Total selected: 6982
+Processed:      300
+Skipped:        6682
+Failed:         0
+Provisions:     1496
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-22T01:56:18+01:00 chunk complete files=6982
+2026-02-22T01:56:18+01:00 target limit 7282 (current 6982)
+2026-02-22T01:56:18+01:00 attempt 1 limit 7282
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=7282
+types=216,21,124,1
+
+[100/7282] resume-skip=100 processed=0 failed=0
+[200/7282] resume-skip=200 processed=0 failed=0
+[300/7282] resume-skip=300 processed=0 failed=0
+[400/7282] resume-skip=400 processed=0 failed=0
+[500/7282] resume-skip=500 processed=0 failed=0
+[600/7282] resume-skip=600 processed=0 failed=0
+[700/7282] resume-skip=700 processed=0 failed=0
+[800/7282] resume-skip=800 processed=0 failed=0
+[900/7282] resume-skip=900 processed=0 failed=0
+[1000/7282] resume-skip=1000 processed=0 failed=0
+[1100/7282] resume-skip=1100 processed=0 failed=0
+[1200/7282] resume-skip=1200 processed=0 failed=0
+[1300/7282] resume-skip=1300 processed=0 failed=0
+[1400/7282] resume-skip=1400 processed=0 failed=0
+[1500/7282] resume-skip=1500 processed=0 failed=0
+[1600/7282] resume-skip=1600 processed=0 failed=0
+[1700/7282] resume-skip=1700 processed=0 failed=0
+[1800/7282] resume-skip=1800 processed=0 failed=0
+[1900/7282] resume-skip=1900 processed=0 failed=0
+[2000/7282] resume-skip=2000 processed=0 failed=0
+[2100/7282] resume-skip=2100 processed=0 failed=0
+[2200/7282] resume-skip=2200 processed=0 failed=0
+[2300/7282] resume-skip=2300 processed=0 failed=0
+[2400/7282] resume-skip=2400 processed=0 failed=0
+[2500/7282] resume-skip=2500 processed=0 failed=0
+[2600/7282] resume-skip=2600 processed=0 failed=0
+[2700/7282] resume-skip=2700 processed=0 failed=0
+[2800/7282] resume-skip=2800 processed=0 failed=0
+[2900/7282] resume-skip=2900 processed=0 failed=0
+[3000/7282] resume-skip=3000 processed=0 failed=0
+[3100/7282] resume-skip=3100 processed=0 failed=0
+[3200/7282] resume-skip=3200 processed=0 failed=0
+[3300/7282] resume-skip=3300 processed=0 failed=0
+[3400/7282] resume-skip=3400 processed=0 failed=0
+[3500/7282] resume-skip=3500 processed=0 failed=0
+[3600/7282] resume-skip=3600 processed=0 failed=0
+[3700/7282] resume-skip=3700 processed=0 failed=0
+[3800/7282] resume-skip=3800 processed=0 failed=0
+[3900/7282] resume-skip=3900 processed=0 failed=0
+[4000/7282] resume-skip=4000 processed=0 failed=0
+[4100/7282] resume-skip=4100 processed=0 failed=0
+[4200/7282] resume-skip=4200 processed=0 failed=0
+[4300/7282] resume-skip=4300 processed=0 failed=0
+[4400/7282] resume-skip=4400 processed=0 failed=0
+[4500/7282] resume-skip=4500 processed=0 failed=0
+[4600/7282] resume-skip=4600 processed=0 failed=0
+[4700/7282] resume-skip=4700 processed=0 failed=0
+[4800/7282] resume-skip=4800 processed=0 failed=0
+[4900/7282] resume-skip=4900 processed=0 failed=0
+[5000/7282] resume-skip=5000 processed=0 failed=0
+[5100/7282] resume-skip=5100 processed=0 failed=0
+[5200/7282] resume-skip=5200 processed=0 failed=0
+[5300/7282] resume-skip=5300 processed=0 failed=0
+[5400/7282] resume-skip=5400 processed=0 failed=0
+[5500/7282] resume-skip=5500 processed=0 failed=0
+[5600/7282] resume-skip=5600 processed=0 failed=0
+[5700/7282] resume-skip=5700 processed=0 failed=0
+[5800/7282] resume-skip=5800 processed=0 failed=0
+[5900/7282] resume-skip=5900 processed=0 failed=0
+[6000/7282] resume-skip=6000 processed=0 failed=0
+[6100/7282] resume-skip=6100 processed=0 failed=0
+[6200/7282] resume-skip=6200 processed=0 failed=0
+[6300/7282] resume-skip=6300 processed=0 failed=0
+[6400/7282] resume-skip=6400 processed=0 failed=0
+[6500/7282] resume-skip=6500 processed=0 failed=0
+[6600/7282] resume-skip=6600 processed=0 failed=0
+[6700/7282] resume-skip=6700 processed=0 failed=0
+[6800/7282] resume-skip=6800 processed=0 failed=0
+[6900/7282] resume-skip=6900 processed=0 failed=0
+[7000/7282] processed=18 skipped=6982 failed=0 provisions=70
+[7050/7282] processed=68 skipped=6982 failed=0 provisions=419
+[7100/7282] processed=118 skipped=6982 failed=0 provisions=626
+[7150/7282] processed=168 skipped=6982 failed=0 provisions=844
+[7200/7282] processed=218 skipped=6982 failed=0 provisions=1103
+[7250/7282] processed=268 skipped=6982 failed=0 provisions=1197
+[7282/7282] processed=300 skipped=6982 failed=0 provisions=1292
+
+Ingestion Summary
+-----------------
+Total selected: 7282
+Processed:      300
+Skipped:        6982
+Failed:         0
+Provisions:     1292
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-22T02:06:20+01:00 chunk complete files=7282
+2026-02-22T02:06:20+01:00 target limit 7582 (current 7282)
+2026-02-22T02:06:20+01:00 attempt 1 limit 7582
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=7582
+types=216,21,124,1
+
+[100/7582] resume-skip=100 processed=0 failed=0
+[200/7582] resume-skip=200 processed=0 failed=0
+[300/7582] resume-skip=300 processed=0 failed=0
+[400/7582] resume-skip=400 processed=0 failed=0
+[500/7582] resume-skip=500 processed=0 failed=0
+[600/7582] resume-skip=600 processed=0 failed=0
+[700/7582] resume-skip=700 processed=0 failed=0
+[800/7582] resume-skip=800 processed=0 failed=0
+[900/7582] resume-skip=900 processed=0 failed=0
+[1000/7582] resume-skip=1000 processed=0 failed=0
+[1100/7582] resume-skip=1100 processed=0 failed=0
+[1200/7582] resume-skip=1200 processed=0 failed=0
+[1300/7582] resume-skip=1300 processed=0 failed=0
+[1400/7582] resume-skip=1400 processed=0 failed=0
+[1500/7582] resume-skip=1500 processed=0 failed=0
+[1600/7582] resume-skip=1600 processed=0 failed=0
+[1700/7582] resume-skip=1700 processed=0 failed=0
+[1800/7582] resume-skip=1800 processed=0 failed=0
+[1900/7582] resume-skip=1900 processed=0 failed=0
+[2000/7582] resume-skip=2000 processed=0 failed=0
+[2100/7582] resume-skip=2100 processed=0 failed=0
+[2200/7582] resume-skip=2200 processed=0 failed=0
+[2300/7582] resume-skip=2300 processed=0 failed=0
+[2400/7582] resume-skip=2400 processed=0 failed=0
+[2500/7582] resume-skip=2500 processed=0 failed=0
+[2600/7582] resume-skip=2600 processed=0 failed=0
+[2700/7582] resume-skip=2700 processed=0 failed=0
+[2800/7582] resume-skip=2800 processed=0 failed=0
+[2900/7582] resume-skip=2900 processed=0 failed=0
+[3000/7582] resume-skip=3000 processed=0 failed=0
+[3100/7582] resume-skip=3100 processed=0 failed=0
+[3200/7582] resume-skip=3200 processed=0 failed=0
+[3300/7582] resume-skip=3300 processed=0 failed=0
+[3400/7582] resume-skip=3400 processed=0 failed=0
+[3500/7582] resume-skip=3500 processed=0 failed=0
+[3600/7582] resume-skip=3600 processed=0 failed=0
+[3700/7582] resume-skip=3700 processed=0 failed=0
+[3800/7582] resume-skip=3800 processed=0 failed=0
+[3900/7582] resume-skip=3900 processed=0 failed=0
+[4000/7582] resume-skip=4000 processed=0 failed=0
+[4100/7582] resume-skip=4100 processed=0 failed=0
+[4200/7582] resume-skip=4200 processed=0 failed=0
+[4300/7582] resume-skip=4300 processed=0 failed=0
+[4400/7582] resume-skip=4400 processed=0 failed=0
+[4500/7582] resume-skip=4500 processed=0 failed=0
+[4600/7582] resume-skip=4600 processed=0 failed=0
+[4700/7582] resume-skip=4700 processed=0 failed=0
+[4800/7582] resume-skip=4800 processed=0 failed=0
+[4900/7582] resume-skip=4900 processed=0 failed=0
+[5000/7582] resume-skip=5000 processed=0 failed=0
+[5100/7582] resume-skip=5100 processed=0 failed=0
+[5200/7582] resume-skip=5200 processed=0 failed=0
+[5300/7582] resume-skip=5300 processed=0 failed=0
+[5400/7582] resume-skip=5400 processed=0 failed=0
+[5500/7582] resume-skip=5500 processed=0 failed=0
+[5600/7582] resume-skip=5600 processed=0 failed=0
+[5700/7582] resume-skip=5700 processed=0 failed=0
+[5800/7582] resume-skip=5800 processed=0 failed=0
+[5900/7582] resume-skip=5900 processed=0 failed=0
+[6000/7582] resume-skip=6000 processed=0 failed=0
+[6100/7582] resume-skip=6100 processed=0 failed=0
+[6200/7582] resume-skip=6200 processed=0 failed=0
+[6300/7582] resume-skip=6300 processed=0 failed=0
+[6400/7582] resume-skip=6400 processed=0 failed=0
+[6500/7582] resume-skip=6500 processed=0 failed=0
+[6600/7582] resume-skip=6600 processed=0 failed=0
+[6700/7582] resume-skip=6700 processed=0 failed=0
+[6800/7582] resume-skip=6800 processed=0 failed=0
+[6900/7582] resume-skip=6900 processed=0 failed=0
+[7000/7582] resume-skip=7000 processed=0 failed=0
+[7100/7582] resume-skip=7100 processed=0 failed=0
+[7200/7582] resume-skip=7200 processed=0 failed=0
+[7300/7582] processed=18 skipped=7282 failed=0 provisions=196
+[7350/7582] processed=68 skipped=7282 failed=0 provisions=401
+[7400/7582] processed=118 skipped=7282 failed=0 provisions=642
+[7450/7582] processed=168 skipped=7282 failed=0 provisions=731
+[7500/7582] processed=218 skipped=7282 failed=0 provisions=847
+[7550/7582] processed=268 skipped=7282 failed=0 provisions=1250
+[7582/7582] processed=300 skipped=7282 failed=0 provisions=1574
+
+Ingestion Summary
+-----------------
+Total selected: 7582
+Processed:      300
+Skipped:        7282
+Failed:         0
+Provisions:     1574
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-22T02:16:40+01:00 chunk complete files=7582
+2026-02-22T02:16:40+01:00 target limit 7882 (current 7582)
+2026-02-22T02:16:40+01:00 attempt 1 limit 7882
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=7882
+types=216,21,124,1
+
+[100/7882] resume-skip=100 processed=0 failed=0
+[200/7882] resume-skip=200 processed=0 failed=0
+[300/7882] resume-skip=300 processed=0 failed=0
+[400/7882] resume-skip=400 processed=0 failed=0
+[500/7882] resume-skip=500 processed=0 failed=0
+[600/7882] resume-skip=600 processed=0 failed=0
+[700/7882] resume-skip=700 processed=0 failed=0
+[800/7882] resume-skip=800 processed=0 failed=0
+[900/7882] resume-skip=900 processed=0 failed=0
+[1000/7882] resume-skip=1000 processed=0 failed=0
+[1100/7882] resume-skip=1100 processed=0 failed=0
+[1200/7882] resume-skip=1200 processed=0 failed=0
+[1300/7882] resume-skip=1300 processed=0 failed=0
+[1400/7882] resume-skip=1400 processed=0 failed=0
+[1500/7882] resume-skip=1500 processed=0 failed=0
+[1600/7882] resume-skip=1600 processed=0 failed=0
+[1700/7882] resume-skip=1700 processed=0 failed=0
+[1800/7882] resume-skip=1800 processed=0 failed=0
+[1900/7882] resume-skip=1900 processed=0 failed=0
+[2000/7882] resume-skip=2000 processed=0 failed=0
+[2100/7882] resume-skip=2100 processed=0 failed=0
+[2200/7882] resume-skip=2200 processed=0 failed=0
+[2300/7882] resume-skip=2300 processed=0 failed=0
+[2400/7882] resume-skip=2400 processed=0 failed=0
+[2500/7882] resume-skip=2500 processed=0 failed=0
+[2600/7882] resume-skip=2600 processed=0 failed=0
+[2700/7882] resume-skip=2700 processed=0 failed=0
+[2800/7882] resume-skip=2800 processed=0 failed=0
+[2900/7882] resume-skip=2900 processed=0 failed=0
+[3000/7882] resume-skip=3000 processed=0 failed=0
+[3100/7882] resume-skip=3100 processed=0 failed=0
+[3200/7882] resume-skip=3200 processed=0 failed=0
+[3300/7882] resume-skip=3300 processed=0 failed=0
+[3400/7882] resume-skip=3400 processed=0 failed=0
+[3500/7882] resume-skip=3500 processed=0 failed=0
+[3600/7882] resume-skip=3600 processed=0 failed=0
+[3700/7882] resume-skip=3700 processed=0 failed=0
+[3800/7882] resume-skip=3800 processed=0 failed=0
+[3900/7882] resume-skip=3900 processed=0 failed=0
+[4000/7882] resume-skip=4000 processed=0 failed=0
+[4100/7882] resume-skip=4100 processed=0 failed=0
+[4200/7882] resume-skip=4200 processed=0 failed=0
+[4300/7882] resume-skip=4300 processed=0 failed=0
+[4400/7882] resume-skip=4400 processed=0 failed=0
+[4500/7882] resume-skip=4500 processed=0 failed=0
+[4600/7882] resume-skip=4600 processed=0 failed=0
+[4700/7882] resume-skip=4700 processed=0 failed=0
+[4800/7882] resume-skip=4800 processed=0 failed=0
+[4900/7882] resume-skip=4900 processed=0 failed=0
+[5000/7882] resume-skip=5000 processed=0 failed=0
+[5100/7882] resume-skip=5100 processed=0 failed=0
+[5200/7882] resume-skip=5200 processed=0 failed=0
+[5300/7882] resume-skip=5300 processed=0 failed=0
+[5400/7882] resume-skip=5400 processed=0 failed=0
+[5500/7882] resume-skip=5500 processed=0 failed=0
+[5600/7882] resume-skip=5600 processed=0 failed=0
+[5700/7882] resume-skip=5700 processed=0 failed=0
+[5800/7882] resume-skip=5800 processed=0 failed=0
+[5900/7882] resume-skip=5900 processed=0 failed=0
+[6000/7882] resume-skip=6000 processed=0 failed=0
+[6100/7882] resume-skip=6100 processed=0 failed=0
+[6200/7882] resume-skip=6200 processed=0 failed=0
+[6300/7882] resume-skip=6300 processed=0 failed=0
+[6400/7882] resume-skip=6400 processed=0 failed=0
+[6500/7882] resume-skip=6500 processed=0 failed=0
+[6600/7882] resume-skip=6600 processed=0 failed=0
+[6700/7882] resume-skip=6700 processed=0 failed=0
+[6800/7882] resume-skip=6800 processed=0 failed=0
+[6900/7882] resume-skip=6900 processed=0 failed=0
+[7000/7882] resume-skip=7000 processed=0 failed=0
+[7100/7882] resume-skip=7100 processed=0 failed=0
+[7200/7882] resume-skip=7200 processed=0 failed=0
+[7300/7882] resume-skip=7300 processed=0 failed=0
+[7400/7882] resume-skip=7400 processed=0 failed=0
+[7500/7882] resume-skip=7500 processed=0 failed=0
+[7600/7882] processed=18 skipped=7582 failed=0 provisions=73
+[7650/7882] processed=68 skipped=7582 failed=0 provisions=210
+[7700/7882] processed=118 skipped=7582 failed=0 provisions=617
+[7750/7882] processed=168 skipped=7582 failed=0 provisions=1241
+[7800/7882] processed=218 skipped=7582 failed=0 provisions=1681
+[7850/7882] processed=268 skipped=7582 failed=0 provisions=2150
+[7882/7882] processed=300 skipped=7582 failed=0 provisions=2334
+
+Ingestion Summary
+-----------------
+Total selected: 7882
+Processed:      300
+Skipped:        7582
+Failed:         0
+Provisions:     2334
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-22T02:26:49+01:00 chunk complete files=7882
+2026-02-22T02:26:49+01:00 target limit 8165 (current 7882)
+2026-02-22T02:26:49+01:00 attempt 1 limit 8165
+Ukrainian Law MCP -- Ingestion Pipeline
+=======================================
+Portal: https://zakon.rada.gov.ua
+Mode:   FULL
+Rate:   MCP_FETCH_DELAY_MS=1000
+fetchEn=false cacheHtml=false resume=true
+limit=8165
+types=216,21,124,1
+
+[100/8165] resume-skip=100 processed=0 failed=0
+[200/8165] resume-skip=200 processed=0 failed=0
+[300/8165] resume-skip=300 processed=0 failed=0
+[400/8165] resume-skip=400 processed=0 failed=0
+[500/8165] resume-skip=500 processed=0 failed=0
+[600/8165] resume-skip=600 processed=0 failed=0
+[700/8165] resume-skip=700 processed=0 failed=0
+[800/8165] resume-skip=800 processed=0 failed=0
+[900/8165] resume-skip=900 processed=0 failed=0
+[1000/8165] resume-skip=1000 processed=0 failed=0
+[1100/8165] resume-skip=1100 processed=0 failed=0
+[1200/8165] resume-skip=1200 processed=0 failed=0
+[1300/8165] resume-skip=1300 processed=0 failed=0
+[1400/8165] resume-skip=1400 processed=0 failed=0
+[1500/8165] resume-skip=1500 processed=0 failed=0
+[1600/8165] resume-skip=1600 processed=0 failed=0
+[1700/8165] resume-skip=1700 processed=0 failed=0
+[1800/8165] resume-skip=1800 processed=0 failed=0
+[1900/8165] resume-skip=1900 processed=0 failed=0
+[2000/8165] resume-skip=2000 processed=0 failed=0
+[2100/8165] resume-skip=2100 processed=0 failed=0
+[2200/8165] resume-skip=2200 processed=0 failed=0
+[2300/8165] resume-skip=2300 processed=0 failed=0
+[2400/8165] resume-skip=2400 processed=0 failed=0
+[2500/8165] resume-skip=2500 processed=0 failed=0
+[2600/8165] resume-skip=2600 processed=0 failed=0
+[2700/8165] resume-skip=2700 processed=0 failed=0
+[2800/8165] resume-skip=2800 processed=0 failed=0
+[2900/8165] resume-skip=2900 processed=0 failed=0
+[3000/8165] resume-skip=3000 processed=0 failed=0
+[3100/8165] resume-skip=3100 processed=0 failed=0
+[3200/8165] resume-skip=3200 processed=0 failed=0
+[3300/8165] resume-skip=3300 processed=0 failed=0
+[3400/8165] resume-skip=3400 processed=0 failed=0
+[3500/8165] resume-skip=3500 processed=0 failed=0
+[3600/8165] resume-skip=3600 processed=0 failed=0
+[3700/8165] resume-skip=3700 processed=0 failed=0
+[3800/8165] resume-skip=3800 processed=0 failed=0
+[3900/8165] resume-skip=3900 processed=0 failed=0
+[4000/8165] resume-skip=4000 processed=0 failed=0
+[4100/8165] resume-skip=4100 processed=0 failed=0
+[4200/8165] resume-skip=4200 processed=0 failed=0
+[4300/8165] resume-skip=4300 processed=0 failed=0
+[4400/8165] resume-skip=4400 processed=0 failed=0
+[4500/8165] resume-skip=4500 processed=0 failed=0
+[4600/8165] resume-skip=4600 processed=0 failed=0
+[4700/8165] resume-skip=4700 processed=0 failed=0
+[4800/8165] resume-skip=4800 processed=0 failed=0
+[4900/8165] resume-skip=4900 processed=0 failed=0
+[5000/8165] resume-skip=5000 processed=0 failed=0
+[5100/8165] resume-skip=5100 processed=0 failed=0
+[5200/8165] resume-skip=5200 processed=0 failed=0
+[5300/8165] resume-skip=5300 processed=0 failed=0
+[5400/8165] resume-skip=5400 processed=0 failed=0
+[5500/8165] resume-skip=5500 processed=0 failed=0
+[5600/8165] resume-skip=5600 processed=0 failed=0
+[5700/8165] resume-skip=5700 processed=0 failed=0
+[5800/8165] resume-skip=5800 processed=0 failed=0
+[5900/8165] resume-skip=5900 processed=0 failed=0
+[6000/8165] resume-skip=6000 processed=0 failed=0
+[6100/8165] resume-skip=6100 processed=0 failed=0
+[6200/8165] resume-skip=6200 processed=0 failed=0
+[6300/8165] resume-skip=6300 processed=0 failed=0
+[6400/8165] resume-skip=6400 processed=0 failed=0
+[6500/8165] resume-skip=6500 processed=0 failed=0
+[6600/8165] resume-skip=6600 processed=0 failed=0
+[6700/8165] resume-skip=6700 processed=0 failed=0
+[6800/8165] resume-skip=6800 processed=0 failed=0
+[6900/8165] resume-skip=6900 processed=0 failed=0
+[7000/8165] resume-skip=7000 processed=0 failed=0
+[7100/8165] resume-skip=7100 processed=0 failed=0
+[7200/8165] resume-skip=7200 processed=0 failed=0
+[7300/8165] resume-skip=7300 processed=0 failed=0
+[7400/8165] resume-skip=7400 processed=0 failed=0
+[7500/8165] resume-skip=7500 processed=0 failed=0
+[7600/8165] resume-skip=7600 processed=0 failed=0
+[7700/8165] resume-skip=7700 processed=0 failed=0
+[7800/8165] resume-skip=7800 processed=0 failed=0
+[7900/8165] processed=18 skipped=7882 failed=0 provisions=238
+[7950/8165] processed=68 skipped=7882 failed=0 provisions=976
+[8000/8165] processed=118 skipped=7882 failed=0 provisions=1619
+[8050/8165] processed=168 skipped=7882 failed=0 provisions=2428
+[8100/8165] processed=218 skipped=7882 failed=0 provisions=2867
+[8150/8165] processed=268 skipped=7882 failed=0 provisions=3135
+[8165/8165] processed=283 skipped=7882 failed=0 provisions=3250
+
+Ingestion Summary
+-----------------
+Total selected: 8165
+Processed:      283
+Skipped:        7882
+Failed:         0
+Provisions:     3250
+Definitions:    0
+Seed dir:       /home/ansvar/Projects/mcps/law-mcps/Ukrainian-law-mcp/data/seed
+2026-02-22T02:36:33+01:00 chunk complete files=8165
+2026-02-22T02:36:33+01:00 ALL_DONE files=8165
